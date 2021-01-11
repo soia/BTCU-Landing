@@ -4,6 +4,7 @@ import Community from './community';
 import AboutUs from './about-us/about-us';
 import Advantages from './advantages';
 import Airdrop from './airdrop';
+import Media from './media';
 
 const HomePage = () => (
     <Fragment>
@@ -12,6 +13,7 @@ const HomePage = () => (
         <AboutUs />
         <Advantages />
         <Airdrop />
+        <Media />
     </Fragment>
 );
 
