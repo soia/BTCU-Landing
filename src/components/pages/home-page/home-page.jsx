@@ -4,6 +4,7 @@ import Community from './community';
 import AboutUs from './about-us/about-us';
 import Advantages from './advantages';
 import Airdrop from './airdrop';
+import Ambassadors from './ambassadors';
 import Media from './media';
 import Partners from './partners';
 import Development from './development';
@@ -16,6 +17,7 @@ const HomePage = () => (
         <AboutUs />
         <Advantages />
         <Airdrop />
+        <Ambassadors />
         <Media />
         <Partners />
         <Development />
