@@ -1,0 +1,93 @@
+{
+    "headings": {
+      "ambassadorsMain": "BTCU带货人",
+      "ambassadorsSubheading": "带货人",
+      "foundation": "基金会",
+      "sourceCodeSub": "开发",
+      "sourceCode": "源 <span class='txt--red'>代码</span>",
+      "bitcoinUltimatum": "Ultimatum",
+      "aboutUs": "关于 <span class='txt--red'>我们</span>",
+      "advantages": "优势",
+      "airdrop": "Airdrop",
+      "airdropText": "供给量除开分配 <span class='txt--red'>原则</span>",
+      "btcuTeam": "BTCU <span class='txt--red'>团队</span>",
+      "team": "团队",
+      "partners": "合作伙伴",
+      "stayTuned": "保持 <span class='txt--red'>关注!</span>",
+      "media": "媒体",
+      "mediaAboutUs": "媒体关于我们",
+      "company": "公司",
+      "location": "地点",
+      "subscribe": "关注",
+      "contact": "联系方式",
+      "communitySubheading": "社区",
+      "community": "赶快加入我们的<span class='txt--red'>社区!</span>",
+      "aboutUsMain": "团队和<span class='txt--red'>区块链</span>",
+      "aboutUsSubheading": "关于 我们",
+      "aboutUsMainRed": "Prof-it Blockchain Ltd."
+    },
+    "texts": {
+      "whitePaper": "白皮书",
+      "copied": "已复制",
+      "btcuShort": "新一代比特币分叉，结合了加密世界的最佳创意和成就！BTCU基础上有智能合约、与PoA结合的LPoS挖矿算法、私人交易和其他技术的分散生态系统！",
+      "aboutUs": "由 Nikolai Udianskyi 领导的 Prof-it Blockchain Ltd.公司是一个创新区块链解决方案开发团队。该团队的任务是创建一个独特的区块链协议，并实现一能够满足现代加密社区所有需求的解决方案—— 这就是BTCU区块链。",
+      "aboutUs2": "BTCU区块链提供网络中存在的20个交易验证单位，其中10个将由项目团队确定（顶级交易所和加密货币行业的领先公司），另外10个验证器将由社区确定。区块链包括智能合约、匿名交易、原子交换以及带宽扩展到10000 tp/s的能力。",
+      "airdrop": "分叉启动过程中，第一个事件将是Airdrop。代币将加算到比特币网络的所有用户的BTCU网络相同的钱包上，在分叉块上的比特币余额的比例是1:1 ! 换句话说，分支之后，所有用户将能够在我们的网络中找到与分支时的BTC网络中相同数量的BTCU代币。 最重要的是，要使用BTCU代币，您只需要登录BTCU网络中自己的钱包即可。BTCU 使一切变得尽可能简单和方便！",
+      "subscribeToNewsletter": "订阅我们的时事通讯，获取最新信息",
+      "mainAdvantage": "主要优势",
+      "community": "在正式的Telegram聊天中参与有关BTCU项目的所有重要事件和最新新闻的讨论！",
+      "collaboration": "合作"
+    },
+    "forms": {
+      "enterYourEmail": "请输入您的电子邮件"
+    },
+    "buttons": {
+      "comingSoon": "即将到来",
+      "showMore": "更多",
+      "seeMore": "查看更多",
+      "joinUs": "加入我们",
+      "send": "发送"
+    },
+    "navigation": {
+      "aboutUs": "关于我们",
+      "aboutUsStyled": "关于 <span class='txt--red'>我们</span>",
+      "advantages": "优势",
+      "btcuTeam": "BTCU 团队",
+      "btcuTeamStyled": "BTCU <span class='txt--red'>团队</span>",
+      "partners": "合作伙伴",
+      "airdrop": "Airdrop",
+      "english": "English",
+      "languages": "语言"
+    },
+    "actions": {
+      "subscribeText": "订阅我们的时事通讯，获取最新信息"
+    },
+    "lists": {
+      "advantagesSlider": [
+        {
+          "title": "验证与挖矿原则",
+          "text": "BTCU网络中的监管者、分销商和验证者将是权威顾问、区块链公司和加密货币交易所，它们将获得对主节点的控制权。本解决方案是为了卸载网络，并避免经典的、能源密集型的挖矿。这就是为什么BTCU区块链将基于与PoA结合的LPoS挖矿算法，其中LPoS将被用户用于挖矿，而PoA将用于交易验证。"
+        },
+        {
+          "title": "代币销售原则",
+          "text": " 分叉启动时, 将以1：1的比例与分支块上的BTC余额的比例对BTCU网络中的所有钱包进行比特币网络的所有用户的Airdrop。分支之后，所有用户将能够在我们的网络中找到与分支时的BTC网络中相同数量的BTCU代币。 最重要的是，要使用BTCU代币，您只需要登录BTCU网络中自己的钱包即可。"
+        },
+        {
+          "title": "高带宽",
+          "text": "使用PoA协议来验证交易将增加区块链的带宽并获得200 tps的速度，而且可以扩展到10,000 tps。需要注意的是，比特币网络目前的带宽约为3,8 tps，这给用户进行交易时带来了额外的不便。"
+        },
+        {
+          "title": "私人交易",
+          "text": "值得记住的是，任何区块链网络上交易方面的首要和最重要的成分是匿名性。如果某人出于某种原因选择了加密支付作为替代方式, 那么除了没有佣金和中间人意外，它主要注意到匿名性。为了使BTCU用户在进行交易时保持匿名，开发团队在网络中添加了进行私人转移的工能。"
+        },
+        {
+          "title": "智能合约",
+          "text": "BTCU团队的任务是开发智能合约的方向，在区块链协议上实现源自互换技术，以便不仅在单个区块链协议的框架内进行交易，而且与其他协议进行交互，这将在全球范围内扩展这项技术的可能性。为了进行安全的交易，BTC Ultimatum区块链将使用智能合约，用户将不必寻找中介或其他方式来保护自己免受欺诈。"
+        }
+      ]
+    },
+    "rights": {
+      "reservedText": "保留所有权利, Bitcoin Ultimatum",
+      "limited": "Prof-IT Blockchain Limited"
+    }
+  }
