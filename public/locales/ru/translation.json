@@ -23,7 +23,8 @@
       "communitySubheading": "Сообщество",
       "community": "Станьте частью",
       "member": "сообщества!",
-      "aboutUsMain": "Команда и <span class='txt--red'>блокчейн</span>",
+      "aboutUsMain": "Команда и",
+      "blockchain": "блокчейн",
       "aboutUsSubheading": "О нас",
       "aboutUsMainRed": "Prof-it Blockchain Ltd."
     },

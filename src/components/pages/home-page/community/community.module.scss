@@ -12,10 +12,12 @@
         letter-spacing: $desctop1px;
         text-transform: uppercase;
         font-size: $desctop12px;
+        white-space: nowrap;
+        min-width: 7vw;
     }
 
     &__rightSide {
-        margin: $desctop40px 0 0 $desctop20px;
+        margin: $desctop30px 0 0 $desctop5px;
 
         &_title {
             margin-bottom: $desctop20px;
