@@ -46,7 +46,7 @@ const Advantages = () => {
                             const { id, title, text } = item;
 
                             return (
-                                <div className={style.advantages__content_item}>
+                                <div key={id} className={style.advantages__content_item}>
                                     <div className={style.advantages__content_top}>
                                         <p className={style.advantages__content_title}>
                                             {title}
