@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="25px" viewBox="0 0 22 25" version="1.1">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>ico/office</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design-New" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Web-01-Copy-2" transform="translate(-792.000000, -9683.000000)" stroke="#FFFFFF">
+            <g id="Group-25" transform="translate(0.000000, 3348.000000)">
+                <g id="Group-28" transform="translate(0.000000, 5853.000000)">
+                    <g id="11" transform="translate(0.000000, 423.000000)">
+                        <g id="Group-6" transform="translate(122.000000, 60.000000)">
+                            <g id="Group-18" transform="translate(670.000000, 0.000000)">
+                                <g id="ico/office">
+                                    <g id="office">
+                                        <polygon id="Path-3" points="2.2 22.9028571 2.2 2.19428571 19.8 2.19428571 19.8 22.9028571"/>
+                                        <path d="M0,23.04 L22,23.04" id="Path-4"/>
+                                        <polyline id="Path-5" points="15.4 2.19428571 15.4 1.76140455e-12 6.6 1.76141514e-12 6.6 2.19428571"/>
+                                        <polyline id="Path-5" points="15.4 22.9028571 15.4 18.5142857 6.6 18.5142857 6.6 22.9028571"/>
+                                        <g id="Group-26" transform="translate(6.600000, 6.445714)">
+                                            <rect id="Rectangle" x="-0.5" y="-0.5" width="3.2" height="3.19428571"/>
+                                            <rect id="Rectangle" x="6.1" y="-0.5" width="3.2" height="3.19428571"/>
+                                            <rect id="Rectangle" x="-0.5" y="6.08285714" width="3.2" height="3.19428571"/>
+                                            <rect id="Rectangle" x="6.1" y="6.08285714" width="3.2" height="3.19428571"/>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
