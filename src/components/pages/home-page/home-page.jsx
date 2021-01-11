@@ -6,6 +6,7 @@ import Advantages from './advantages';
 import Airdrop from './airdrop';
 import Media from './media';
 import Partners from './partners';
+import Development from './development';
 
 const HomePage = () => (
     <Fragment>
@@ -16,6 +17,7 @@ const HomePage = () => (
         <Airdrop />
         <Media />
         <Partners />
+        <Development />
     </Fragment>
 );
 

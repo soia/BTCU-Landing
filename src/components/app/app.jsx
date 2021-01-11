@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import ReactNotification from 'react-notifications-component';
 import Header from '../layouts/header';
 import Footer from '../layouts/footer';
 import { HomePage, PageNotFound, LoadingPage } from '../pages';
 import '../assets/styles/reset.scss';
 import './app.scss';
 import '../assets/styles/fonts.scss';
+import 'react-notifications-component/dist/theme.css';
+
 
 class App extends Component {
     state = {
@@ -33,6 +36,7 @@ class App extends Component {
                     <Route component={PageNotFound} />
                 </Switch>
                 <Footer />
+                <ReactNotification />
             </Router>
         );
     }

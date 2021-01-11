@@ -1,0 +1,67 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixin';
+
+.development {
+    background: $blueGradient;
+    padding: $desctop60px $desctop135px $desctop60px;
+    display: flex;
+
+    &__title {
+        font-family: $Montserrat900;
+        color: $whiteColor;
+        letter-spacing: $desctop1px;
+        text-transform: uppercase;
+        font-size: $desctop12px;
+        white-space: nowrap;
+        min-width: 7vw;
+    }
+
+    &__rightSide {
+        margin: $desctop90px 0 0 $desctop5px;
+        width: 90%;
+
+        &_title {
+            margin-bottom: $desctop20px;
+            font-family: $Montserrat900;
+            line-height: $desctop50px;
+            font-size: $desctop40px;
+            color: $whiteColor;
+            max-width: 50vw;
+
+            span {
+                color: $redColor;
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: $desctop20px;
+        border-bottom: $desctop2px solid $whiteColor;
+        width: 80%;
+
+        &_link {
+            padding-bottom: $desctop10px;
+            letter-spacing: $desctop1px;
+            text-decoration: none;
+            font-size: $desctop24px;
+            color: $whiteColor;
+            font-family: $Montserrat400;
+
+            &:hover {
+                color: $redColor;
+            }
+        }
+
+        &_copy {
+            cursor: pointer;
+            width: $desctop36px;
+            height: $desctop36px;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}

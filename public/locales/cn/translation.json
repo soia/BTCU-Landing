@@ -4,7 +4,8 @@
       "ambassadorsSubheading": "带货人",
       "foundation": "基金会",
       "sourceCodeSub": "开发",
-      "sourceCode": "源 <span class='txt--red'>代码</span>",
+      "sourceCode": "源",
+      "code": "代码",
       "bitcoinUltimatum": "Ultimatum",
       "advantages": "优势",
       "airdrop": "Airdrop",
@@ -80,5 +81,7 @@
     "rights": {
       "reservedText": "保留所有权利, Bitcoin Ultimatum",
       "limited": "Prof-IT Blockchain Limited"
-    }
+    },
+    "successNotification": "成功!",
+    "сopiedToClipboard": "复制到剪贴板."
   }

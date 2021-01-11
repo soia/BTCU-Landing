@@ -4,7 +4,8 @@
       "ambassadorsSubheading": "Амбассадоры",
       "foundation": "Фонд",
       "sourceCodeSub": "Разработка",
-      "sourceCode": "Исходный <span class='txt--red'>Код</span>",
+      "sourceCode": "Исходный",
+      "code": "Код",
       "bitcoinUltimatum": "Ultimatum",
       "advantages": "Преимущества",
       "airdrop": "Airdrop",
@@ -80,5 +81,7 @@
     "rights": {
       "reservedText": "Все права защищены, Bitcoin Ultimatum",
       "limited": "Prof-IT Blockchain Limited"
-    }
+    },
+    "successNotification": "Успешно!",
+    "сopiedToClipboard": "Скопировано в буфер обмена."
   }
