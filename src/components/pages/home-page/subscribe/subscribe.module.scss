@@ -2,7 +2,7 @@
 @import '../../../assets/styles/mixin';
 
 .subscribe {
-    background: $blueGradient;
+    background: linear-gradient(128.21deg,#313162 -12.97%,#19192d 102.51%);
     padding: $desctop60px $desctop135px $desctop60px;
     display: flex;
 
@@ -17,7 +17,7 @@
     }
 
     &__rightSide {
-        margin: $desctop30px 0 0 $desctop5px;
+        margin: $desctop50px 0 0 $desctop5px;
 
         &_title {
             margin-bottom: $desctop20px;
