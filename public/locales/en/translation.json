@@ -29,7 +29,10 @@
       "aboutUsMain": "Team and",
       "blockchain": "blockchain",
       "aboutUsSubheading": "About us",
-      "aboutUsMainRed": "Profit Blockchain Ltd."
+      "aboutUsMainRed": "Profit Blockchain Ltd.",
+      "wallet": "Wallet",
+      "store": "Store",
+      "explorer": "Explorer"
     },
     "texts": {
       "whitePaper": "White Paper",

@@ -1,8 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink, withRouter } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { HashLink } from 'react-router-hash-link';
+import { compose } from '../../../utils';
 import SelectLangeage from '../../language';
+import { walletPath, storePath, explorerPath } from '../../../constants';
 import logo from '../../assets/images/logos/btcu.svg';
 import style from './header.module.scss';
 
@@ -13,17 +15,38 @@ const Header = () => {
         {
             id: '1',
             name: t('headings.aboutUsSubheading'),
-            path: '#aboutUs',
+            path: '/#aboutUs',
+            link: false,
         },
         {
             id: '2',
             name: t('headings.advantages'),
-            path: '#advantages',
+            path: '/#advantages',
+            link: false,
         },
         {
             id: '3',
             name: t('headings.partners'),
-            path: '#partners',
+            path: '/#partners',
+            link: false,
+        },
+        {
+            id: '4',
+            name: t('headings.wallet'),
+            path: walletPath,
+            link: true,
+        },
+        {
+            id: '5',
+            name: t('headings.store'),
+            path: storePath,
+            link: true,
+        },
+        {
+            id: '6',
+            name: t('headings.explorer'),
+            path: explorerPath,
+            link: true,
         },
     ];
 
@@ -39,12 +62,21 @@ const Header = () => {
                     <ul className={style.header__links}>
                         {links.map(item => {
                             const {
-                                name, path, id,
+                                name, path, id, link,
                             } = item;
 
                             return (
                                 <li key={id} className={style.header__links_item}>
-                                    <AnchorLink href={path}>{name}</AnchorLink>
+                                    {link ? (
+                                        <NavLink
+                                            activeStyle={{ color: '#FF2911' }}
+                                            to={path}
+                                        >
+                                            {name}
+                                        </NavLink>
+                                    ) : (
+                                        <HashLink to={path}>{name}</HashLink>
+                                    )}
                                 </li>
                             );
                         })}
@@ -58,4 +90,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default compose(withRouter)(Header);

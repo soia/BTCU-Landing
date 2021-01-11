@@ -29,7 +29,10 @@
       "aboutUsMain": "Команда и",
       "blockchain": "блокчейн",
       "aboutUsSubheading": "О нас",
-      "aboutUsMainRed": "Prof-it Blockchain Ltd."
+      "aboutUsMainRed": "Prof-it Blockchain Ltd.",
+      "wallet": "Кошелек",
+      "store": "Магазин",
+      "explorer": "Эксплорер"
     },
     "texts": {
       "whitePaper": "White Paper",

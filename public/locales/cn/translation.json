@@ -29,7 +29,10 @@
       "aboutUsMain": "团队和",
       "blockchain": "区块链",
       "aboutUsSubheading": "关于 我们",
-      "aboutUsMainRed": "Prof-it Blockchain Ltd."
+      "aboutUsMainRed": "Prof-it Blockchain Ltd.",
+      "wallet": "钱包",
+      "store": "电商平台",
+      "explorer": "浏览器"
     },
     "texts": {
       "whitePaper": "白皮书",

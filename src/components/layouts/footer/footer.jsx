@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { HashLink } from 'react-router-hash-link';
 import logo from '../../assets/images/logos/btcu.svg';
 import companyIcon from '../../assets/images/icons/company-icon.svg';
 import locationIcon from '../../assets/images/icons/location-icon.svg';
@@ -24,16 +24,16 @@ const Footer = () => {
                             {t('headings.company')}
                         </li>
                         <li className={style.list__link}>
-                            <AnchorLink href="#aboutUs">{t('navigation.aboutUs')}</AnchorLink>
+                            <HashLink to="#aboutUs">{t('navigation.aboutUs')}</HashLink>
                         </li>
                         <li className={style.list__link}>
-                            <AnchorLink href="#advantages">{t('navigation.advantages')}</AnchorLink>
+                            <HashLink to="#advantages">{t('navigation.advantages')}</HashLink>
                         </li>
                         <li className={style.list__link}>
-                            <AnchorLink href="#airdrop">{t('navigation.airdrop')}</AnchorLink>
+                            <HashLink to="#airdrop">{t('navigation.airdrop')}</HashLink>
                         </li>
                         <li className={style.list__link}>
-                            <AnchorLink href="#partners">{t('navigation.partners')}</AnchorLink>
+                            <HashLink to="#partners">{t('navigation.partners')}</HashLink>
                         </li>
                     </ul>
                     <ul className={style.list}>
