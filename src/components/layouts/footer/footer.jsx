@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import logo from '../../assets/images/logos/btcu.svg';
 import companyIcon from '../../assets/images/icons/company-icon.svg';
 import locationIcon from '../../assets/images/icons/location-icon.svg';
@@ -23,16 +24,16 @@ const Footer = () => {
                             {t('headings.company')}
                         </li>
                         <li className={style.list__link}>
-                            <Link to="/">{t('navigation.aboutUs')}</Link>
+                            <AnchorLink href="#aboutUs">{t('navigation.aboutUs')}</AnchorLink>
                         </li>
                         <li className={style.list__link}>
-                            <Link to="/">{t('navigation.advantages')}</Link>
+                            <AnchorLink href="#advantages">{t('navigation.advantages')}</AnchorLink>
                         </li>
                         <li className={style.list__link}>
-                            <Link to="/">{t('navigation.airdrop')}</Link>
+                            <AnchorLink href="#airdrop">{t('navigation.airdrop')}</AnchorLink>
                         </li>
                         <li className={style.list__link}>
-                            <Link to="/">{t('navigation.partners')}</Link>
+                            <AnchorLink href="#partners">{t('navigation.partners')}</AnchorLink>
                         </li>
                     </ul>
                     <ul className={style.list}>

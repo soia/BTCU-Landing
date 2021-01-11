@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import SelectLangeage from '../../language';
 import logo from '../../assets/images/logos/btcu.svg';
 import style from './header.module.scss';
@@ -12,17 +13,17 @@ const Header = () => {
         {
             id: '1',
             name: t('headings.aboutUsSubheading'),
-            path: '/',
+            path: '#aboutUs',
         },
         {
             id: '2',
             name: t('headings.advantages'),
-            path: '/',
+            path: '#advantages',
         },
         {
             id: '3',
             name: t('headings.partners'),
-            path: '/',
+            path: '#partners',
         },
     ];
 
@@ -43,7 +44,7 @@ const Header = () => {
 
                             return (
                                 <li key={id} className={style.header__links_item}>
-                                    <Link to={path}>{name}</Link>
+                                    <AnchorLink href={path}>{name}</AnchorLink>
                                 </li>
                             );
                         })}
