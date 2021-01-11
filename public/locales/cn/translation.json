@@ -21,7 +21,8 @@
       "subscribe": "关注",
       "contact": "联系方式",
       "communitySubheading": "社区",
-      "community": "赶快加入我们的<span class='txt--red'>社区!</span>",
+      "community": "赶快加入我们的",
+      "member": "社区!",
       "aboutUsMain": "团队和<span class='txt--red'>区块链</span>",
       "aboutUsSubheading": "关于 我们",
       "aboutUsMainRed": "Prof-it Blockchain Ltd."

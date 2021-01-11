@@ -21,7 +21,8 @@
       "subscribe": "Подписка",
       "contact": "Контакты",
       "communitySubheading": "Сообщество",
-      "community": "Станьте частью <span class='txt--red'>сообщества!</span>",
+      "community": "Станьте частью",
+      "member": "сообщества!",
       "aboutUsMain": "Команда и <span class='txt--red'>блокчейн</span>",
       "aboutUsSubheading": "О нас",
       "aboutUsMainRed": "Prof-it Blockchain Ltd."

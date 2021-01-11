@@ -21,7 +21,8 @@
       "subscribe": "Subscribe",
       "contact": "Contact",
       "communitySubheading": "Community",
-      "community": "Hurry up to become our community <span class='txt--red'>member!</span>",
+      "community": "Hurry up to become our community",
+      "member": "member!",
       "aboutUsMain": "Team and <span class='txt--red'>blockchain</span>",
       "aboutUsSubheading": "About us",
       "aboutUsMainRed": "Profit Blockchain Ltd."
