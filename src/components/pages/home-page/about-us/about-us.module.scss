@@ -39,7 +39,7 @@
     &__content {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 30px;
+        margin-bottom: $desctop30px;
 
         &_text {
             line-height: 32px;

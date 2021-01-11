@@ -1,0 +1,84 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixin';
+
+.advantages {
+    background: $zirconColor;
+    padding: $desctop60px $desctop135px $desctop60px;
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__title {
+        font-family: $Montserrat900;
+        color: $tolopeaColor;
+        letter-spacing: $desctop1px;
+        text-transform: uppercase;
+        font-size: $desctop12px;
+        white-space: nowrap;
+        min-width: 7vw;
+    }
+
+    &__rightSide {
+        margin: $desctop30px 0 0 $desctop5px;
+
+        &_title {
+            margin-bottom: $desctop20px;
+            font-family: $Montserrat900;
+            line-height: $desctop50px;
+            font-size: $desctop40px;
+            color: $tolopeaColor;
+            max-width: 50vw;
+
+            span {
+                color: $redColor;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: $desctop30px;
+
+        &_item {
+            padding-bottom: $desctop20px;
+            border-bottom: $desctop1px solid $tolopeaColor;
+            margin-bottom: $desctop20px;
+            max-width: 90%;
+
+            &:hover {
+                border-bottom: $desctop1px solid $redColor;
+
+                .advantages__content_number {
+                    text-shadow: 0 0 $desctop1px $redColor;
+                }
+            }
+        }
+
+        &_top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &_title {
+            font-size: $desctop24px;
+            color: $tolopeaColor;
+            font-family: $Montserrat900;
+        }
+
+        &_number {
+            text-shadow: 0 0 $desctop1px $tolopeaColor;
+            font-family: $Montserrat900;
+            font-size: $desctop60px;
+            color: $whiteColor;
+        }
+
+        &_text {
+            line-height: $desctop32px;
+            font-size: $desctop16px;
+            color: $tolopeaColor;
+        }
+    }
+}

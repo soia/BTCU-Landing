@@ -64,29 +64,17 @@
     "actions": {
       "subscribeText": "Subscribe to our newsletter and get notifications to stay up-to-date"
     },
-    "lists": {
-      "advantagesSlider": [
-        {
-          "title": "The principle of validation and mining",
-          "text": "The regulators, distributors and validators in the BTCU network will be authoritative advisers, blockchain companies, and crypto exchanges, which will gain control over the master nodes. This decision was made to unload the network, and to avoid classic, extremely energy-intensive mining. That is why the BTCU blockchain will be based on the LPoS mining algorithm combined with PoA, where LPoS will be used for mining by users, and PoA for transaction validation."
-        },
-        {
-          "title": "Coin sales principle",
-          "text": "When the fork is launched, an airdrop will be conducted to all users of the Bitcoin network to wallets identical in the BTCU network in the ratio of 1:1 to the BTC balance on the branch block. After branching, all users will be able to find in the BTCU network the same amount of BTCU coins as in the BTC network at the time of branching. And most importantly, to use them you only need to log in your own address in the BTCU network."
-        },
-        {
-          "title": "High bandwidth",
-          "text": "Using the PoA protocol to validate transactions will increase the bandwidth of the blockchain and get a speed of 200 tps with the ability to scale up to 10,000 tps. It is important to note that current bandwidth of the Bitcoin network is about 3,8 tps, which creates additional inconvenience to users when carrying out transactions."
-        },
-        {
-          "title": "Private transactions",
-          "text": "It is worth remembering that the first and most important element of any blockchain network, especially in the matter of transactions, is anonymity. If a person, for some reason, chooses crypto payments as an alternative to the classic, then anonymity interests him no less than the absence of commissions and intermediaries. To keep BTCU users anonymous when making transactions, the development team added the ability to conduct private transfers within the network."
-        },
-        {
-          "title": "Smart contracts",
-          "text": "The BTCU team sets itself the task of developing the direction of smart contracts and implementing atomic swap technology natively to the blockchain protocol to allow carry out transactions not only within the framework of a single blockchain protocol, but also interacting with other protocols, which will globally expand the possibilities of this technology. To make secure transactions, the BTC Ultimatum blockchain will use smart contracts that will save users from having to look for intermediaries or other ways to protect themselves from scammers."
-        }
-      ]
+    "advantages": {
+          "title1": "The principle of validation and mining",
+          "text1": "The regulators, distributors and validators in the BTCU network will be authoritative advisers, blockchain companies, and crypto exchanges, which will gain control over the master nodes. This decision was made to unload the network, and to avoid classic, extremely energy-intensive mining. That is why the BTCU blockchain will be based on the LPoS mining algorithm combined with PoA, where LPoS will be used for mining by users, and PoA for transaction validation.",
+          "title2": "Coin sales principle",
+          "text2": "When the fork is launched, an airdrop will be conducted to all users of the Bitcoin network to wallets identical in the BTCU network in the ratio of 1:1 to the BTC balance on the branch block. After branching, all users will be able to find in the BTCU network the same amount of BTCU coins as in the BTC network at the time of branching. And most importantly, to use them you only need to log in your own address in the BTCU network.",
+          "title3": "High bandwidth",
+          "text3": "Using the PoA protocol to validate transactions will increase the bandwidth of the blockchain and get a speed of 200 tps with the ability to scale up to 10,000 tps. It is important to note that current bandwidth of the Bitcoin network is about 3,8 tps, which creates additional inconvenience to users when carrying out transactions.",
+          "title4": "Private transactions",
+          "text4": "It is worth remembering that the first and most important element of any blockchain network, especially in the matter of transactions, is anonymity. If a person, for some reason, chooses crypto payments as an alternative to the classic, then anonymity interests him no less than the absence of commissions and intermediaries. To keep BTCU users anonymous when making transactions, the development team added the ability to conduct private transfers within the network.",
+          "title5": "Smart contracts",
+          "text5": "The BTCU team sets itself the task of developing the direction of smart contracts and implementing atomic swap technology natively to the blockchain protocol to allow carry out transactions not only within the framework of a single blockchain protocol, but also interacting with other protocols, which will globally expand the possibilities of this technology. To make secure transactions, the BTC Ultimatum blockchain will use smart contracts that will save users from having to look for intermediaries or other ways to protect themselves from scammers."
     },
     "rights": {
       "reservedText": "All rights reserved, Bitcoin Ultimatum",
