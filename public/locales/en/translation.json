@@ -14,7 +14,8 @@
       "btcuTeam": "BTCU <span class='txt--red'>Team</span>",
       "team": "Team",
       "partners": "Partners",
-      "stayTuned": "Stay <span class='txt--red'>tuned!</span>",
+      "stayTuned": "Stay",
+      "tuned": "tuned!",
       "media": "Media",
       "mediaAboutUs": "Media about us",
       "aboutUs": "about us",
@@ -54,7 +55,7 @@
     },
     "navigation": {
       "aboutUs": "About Us",
-      "aboutUsStyled": "About <span class='txt--red'>Us</span>",
+      "aboutUsStyled": "About < class='txt--red'>Us</>",
       "advantages": "Advantages",
       "btcuTeam": "BTCU Team",
       "btcuTeamStyled": "BTCU <span class='txt--red'>Team</span>",

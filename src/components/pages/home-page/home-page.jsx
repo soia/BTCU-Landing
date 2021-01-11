@@ -7,6 +7,7 @@ import Airdrop from './airdrop';
 import Media from './media';
 import Partners from './partners';
 import Development from './development';
+import Subscribe from './subscribe/subscribe';
 
 const HomePage = () => (
     <Fragment>
@@ -18,6 +19,7 @@ const HomePage = () => (
         <Media />
         <Partners />
         <Development />
+        <Subscribe />
     </Fragment>
 );
 

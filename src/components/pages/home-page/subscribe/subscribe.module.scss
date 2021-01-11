@@ -1,0 +1,91 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixin';
+
+.subscribe {
+    background: $blueGradient;
+    padding: $desctop60px $desctop135px $desctop60px;
+    display: flex;
+
+    &__title {
+        font-family: $Montserrat900;
+        color: $whiteColor;
+        letter-spacing: $desctop1px;
+        text-transform: uppercase;
+        font-size: $desctop12px;
+        white-space: nowrap;
+        min-width: 7vw;
+    }
+
+    &__rightSide {
+        margin: $desctop30px 0 0 $desctop5px;
+
+        &_title {
+            margin-bottom: $desctop20px;
+            font-family: $Montserrat900;
+            line-height: $desctop50px;
+            font-size: $desctop40px;
+            color: $whiteColor;
+            max-width: 50vw;
+
+            span {
+                color: $redColor;
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+
+        &_text {
+            font-family: $Montserrat400;
+            line-height: $desctop34px;
+            font-size: $desctop14px;
+            color: $whiteColor;
+            max-width: 29vw;
+            margin-right: $desctop70px;
+        }
+
+        &_input {
+            outline: none;
+            border: none;
+            background: transparent;
+            height: $desctop63px;
+            width: $desctop290px;
+            border: 0;
+            border-bottom: $desctop1px solid $whiteColor;
+            font-size: $desctop24px;
+            color: $whiteColor;
+            font-family: $Montserrat400;
+            margin-right: $desctop30px;
+
+            &::placeholder {
+                color: $whiteColor;
+            }
+        }
+
+        &_button {
+            border: 0;
+            font-family: $Montserrat600;
+            font-size: $desctop12px;
+            letter-spacing: $desctop1px;
+            border-radius: $desctop100px;
+            height: $desctop63px;
+            background-color: $redColor;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: $desctop225px;
+            cursor: pointer;
+            color: $whiteColor;
+            text-transform: uppercase;
+            outline: none;
+            border: none;
+
+            &:hover {
+                color: $whiteColor;
+                background: rgba(255, 48, 21, 0.5);
+            }
+        }
+    }
+}
