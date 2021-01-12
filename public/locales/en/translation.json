@@ -32,7 +32,10 @@
       "aboutUsMainRed": "Profit Blockchain Ltd.",
       "wallet": "Wallet",
       "store": "Store",
-      "explorer": "Explorer"
+      "explorer": "Explorer",
+      "BTCUWallet": "The <span>BTCU</span> Wallet",
+      "BTCUStore": "The <span>BTCU</span> Store",
+      "BTCUExplorer": "The <span>BTCU</span> Explorer"
     },
     "texts": {
       "whitePaper": "White Paper",
@@ -44,7 +47,23 @@
       "subscribeToNewsletter": "Subscribe to our newsletter and get notifications to stay up-to-date",
       "mainAdvantage": "The main advantages of",
       "community": "Take part in discussions about all the important events and latest news about BTCU project in the official Telegram chat! ",
-      "collaboration": "Collaboration"
+      "collaboration": "Collaboration",
+      "walletConstruction": "WALLET BTCU IS CURRENTLY UNDER CONSTRUCTION",
+      "storeConstruction": "STORE BTCU IS CURRENTLY UNDER CONSTRUCTION",
+      "explorerConstruction": "EXPLORER BTCU IS CURRENTLY UNDER CONSTRUCTION",
+      "walletDescription": "The app works with BTCU crypto token and blockchain wallets. With BTCU Wallet, you are in control over your funds. Receive, send, store your cryptocurrency and make leasing within the desktop interface.",
+      "userFriendly": "User-friendly",
+      "simpleAndEasy": "Simple and easy, you have full control of your coins.",
+      "secure": "Secure",
+      "robustAndNonStandart": "Robust and non-standart private key encryption. Encrypted data is stored on your device.",
+      "safe": "Safe",
+      "privateKeyOnDevice": "Your private key is stored only on your device.",
+      "personal": "Personal",
+      "turnYourDevice": "Turn your device into your personal bank - do leasing and take money.",
+      "functional": "Functional",
+      "receiveSendAndStoreCoins": "Receive, send and store coins. It seamlessly integrates with the app and PLC Farm to store all your minted coins.",
+      "autonomous": "Autonomous",
+      "walletCanOperate": "The wallet can operate without your involvement while minting new PLCs for you."
     },
     "forms": {
       "enterYourEmail": "Enter your email"

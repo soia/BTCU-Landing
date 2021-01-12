@@ -24,16 +24,16 @@ const Footer = () => {
                             {t('headings.company')}
                         </li>
                         <li className={style.list__link}>
-                            <HashLink to="#aboutUs">{t('navigation.aboutUs')}</HashLink>
+                            <HashLink to="/#aboutUs">{t('navigation.aboutUs')}</HashLink>
                         </li>
                         <li className={style.list__link}>
-                            <HashLink to="#advantages">{t('navigation.advantages')}</HashLink>
+                            <HashLink to="/#advantages">{t('navigation.advantages')}</HashLink>
                         </li>
                         <li className={style.list__link}>
-                            <HashLink to="#airdrop">{t('navigation.airdrop')}</HashLink>
+                            <HashLink to="/#airdrop">{t('navigation.airdrop')}</HashLink>
                         </li>
                         <li className={style.list__link}>
-                            <HashLink to="#partners">{t('navigation.partners')}</HashLink>
+                            <HashLink to="/#partners">{t('navigation.partners')}</HashLink>
                         </li>
                     </ul>
                     <ul className={style.list}>

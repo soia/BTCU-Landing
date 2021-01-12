@@ -32,7 +32,10 @@
       "aboutUsMainRed": "Prof-it Blockchain Ltd.",
       "wallet": "钱包",
       "store": "电商平台",
-      "explorer": "浏览器"
+      "explorer": "浏览器",
+      "BTCUWallet": "<span>BTCU</span> 钱包",
+      "BTCUStore": "<span>BTCU</span> 电商平台",
+      "BTCUExplorer": "<span>BTCU</span> 浏览器"
     },
     "texts": {
       "whitePaper": "白皮书",
@@ -44,7 +47,23 @@
       "subscribeToNewsletter": "订阅我们的时事通讯，获取最新信息",
       "mainAdvantage": "主要优势",
       "community": "在正式的Telegram聊天中参与有关BTCU项目的所有重要事件和最新新闻的讨论！",
-      "collaboration": "合作"
+      "collaboration": "合作",
+      "walletConstruction": "BTCU钱包正在开发中",
+      "storeConstruction": "市场BTCU正在开发中",
+      "explorerConstruction": "开发者BTCU正在开发中",
+      "walletDescription": "该应用程序适用于BTCU加密代币和区块链钱包。使用BTCU钱包，你可以控制你的资金。你可以接收，发送，存储你的加密货币，并在台式界面内进行租赁。",
+      "userFriendly": "方便的用户界面",
+      "simpleAndEasy": "以那么简单和容易的方式，你可以完全控制自己的硬币。",
+      "secure": "可靠的",
+      "robustAndNonStandart": "健壮和非标准的私钥加密。 加密数据存储在你的设备上。",
+      "safe": "安全的",
+      "privateKeyOnDevice": "你的私钥只存储在你的设备上。",
+      "personal": "个人的",
+      "turnYourDevice": "T把你的设备变成你的个人银行 - 进行租赁和收取钱。",
+      "functional": "功能的",
+      "receiveSendAndStoreCoins": "接收，发送和存储硬币。它与应用程序和BTCU无缝集成，以存储你所有的硬币。",
+      "autonomous": "自治的",
+      "walletCanOperate": "你不要参与钱包挖矿新的BTCU的过程。"
     },
     "forms": {
       "enterYourEmail": "请输入您的电子邮件"

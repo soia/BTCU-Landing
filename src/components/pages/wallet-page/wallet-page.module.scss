@@ -9,12 +9,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 
     &__title {
         font-family: $Montserrat900;
         font-size: $desctop60px;
         line-height: $desctop60px;
         color: $whiteColor;
+
+        span {
+            color: $redColor;
+        }
     }
 
     &__subTitle {
@@ -25,6 +30,7 @@
         opacity: 0.89;
         margin: $desctop40px 0;
         max-width: 28vw;
+        margin-bottom: $desctop120px;
     }
 
     &__button {
@@ -55,7 +61,88 @@
         top: 50%;
         transform: translateY(-50%);
         right: 0;
-        height: 40vw;
+        height: 50vw;
+    }
+
+    &__form {
+        width: 100%;
+        display: flex;
+        position: relative;
+        z-index: 1;
+
+        &_input {
+            outline: none;
+            border: none;
+            background: transparent;
+            height: $desctop63px;
+            width: $desctop290px;
+            border: 0;
+            border-bottom: $desctop1px solid $whiteColor;
+            font-size: $desctop24px;
+            color: $whiteColor;
+            font-family: $Montserrat400;
+            margin-right: $desctop30px;
+
+            &::placeholder {
+                color: $whiteColor;
+            }
+        }
+
+        &_button {
+            border: 0;
+            font-family: $Montserrat600;
+            font-size: $desctop12px;
+            letter-spacing: $desctop1px;
+            border-radius: $desctop100px;
+            height: $desctop63px;
+            background-color: $redColor;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: $desctop225px;
+            cursor: pointer;
+            color: $whiteColor;
+            text-transform: uppercase;
+            outline: none;
+            border: none;
+
+            &:hover {
+                color: $whiteColor;
+                background: rgba(255, 48, 21, 0.5);
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        margin-top: auto;
+        margin-bottom: $desctop80px;
+        position: absolute;
+        bottom: 0;
+
+        &_title {
+            min-width: 33%;
+            width: 33%;
+            font-family: $Montserrat400;
+            font-size: $desctop14px;
+            line-height: 2.4;
+            color: $whiteColor;
+            padding-right: $desctop30px;
+            margin-right: $desctop50px;
+            position: relative;
+
+            &:after {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: $desctop63px;
+                width: $desctop1px;
+                background: linear-gradient(1turn,rgba(32,32,62,.0001),#fff);
+            }
+        }
     }
 }
 
@@ -80,5 +167,98 @@
     svg {
         width: $desctop13px;
         height: $desctop13px;
+    }
+}
+
+
+.container {
+    background: $zirconColor;
+    padding: $desctop60px $desctop135px $desctop60px;
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__title {
+        font-family: $Montserrat900;
+        color: $tolopeaColor;
+        letter-spacing: $desctop1px;
+        text-transform: uppercase;
+        font-size: $desctop12px;
+        white-space: nowrap;
+        min-width: 7vw;
+    }
+
+    &__rightSide {
+        margin: $desctop30px 0 0 $desctop5px;
+
+        &_title {
+            margin-bottom: $desctop20px;
+            font-family: $Montserrat900;
+            line-height: $desctop50px;
+            font-size: $desctop40px;
+            color: $tolopeaColor;
+            max-width: 50vw;
+
+            span {
+                color: $redColor;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: $desctop30px;
+
+        &_text {
+            line-height: $desctop32px;
+            font-size: $desctop16px;
+            font-family: $Montserrat400;
+            color: $tolopeaColor;
+            max-width: 85%;
+        }
+    }
+}
+
+.achievements {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__item {
+        display: flex;
+        width: 45%;
+        margin-bottom: $desctop50px;
+
+        &_img {
+            width: $desctop80px;
+            height: $desctop60px;
+            margin-right: $desctop40px;
+        }
+
+        &_title {
+            font-size: $desctop24px;
+            font-weight: $Montserrat500;
+            line-height: 1.2;
+            margin-bottom: $desctop10px;
+            color: $tolopeaColor;
+        }
+
+        &_text {
+            font-weight: $Montserrat400;
+            font-size: $desctop16px;
+            line-height: 2;
+            color: $tolopeaColor;
+        }
+    }
+}
+
+.mainPic {
+    width: 100%;
+    text-align: center;
+
+    img {
+        width: 62vw;
     }
 }
