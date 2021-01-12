@@ -11,7 +11,7 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 101;
+    background: $blueGradient;
 
     @media only screen and (max-width: 499px) {
         height: $mobile70px;
@@ -42,6 +42,7 @@
 
     &__logo {
         margin-right: $desctop35px;
+        z-index: 1;
 
         &_img {
             width: $desctop70px;
