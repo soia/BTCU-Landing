@@ -707,3 +707,36 @@ span.ant-radio+* {
 a:active {
     color: $redColor;
 }
+
+
+// Back to top
+
+.ant-back-top {
+    font-size: $desctop14px;
+    right: $desctop50px;
+    bottom: $desctop50px;
+    width: $desctop40px;
+    height: $desctop40px;
+
+    @media only screen and (max-width: 499px) {
+        font-size: $mobile14px;
+        right: $mobile20px;
+        bottom: $mobile20px;
+        width: $mobile42px;
+        height: $mobile42px;
+    }
+}
+
+.ant-back-top-content {
+    width: $desctop40px;
+    height: $desctop40px;
+    background-color: $tolopeaColor;
+    border-radius: $desctop20px;
+
+    @media only screen and (max-width: 499px) {
+        width: $mobile42px;
+        height: $mobile42px;
+        border-radius: $mobile20px;
+    }
+}
+// Back to top

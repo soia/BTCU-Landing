@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import ReactNotification from 'react-notifications-component';
+import { BackTop } from 'antd';
 import Header from '../layouts/header';
 import Footer from '../layouts/footer';
 import {
@@ -47,6 +48,7 @@ class App extends Component {
                 </Switch>
                 <Footer />
                 <ReactNotification />
+                <BackTop />
             </Router>
         );
     }
