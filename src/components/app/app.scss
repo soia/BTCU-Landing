@@ -732,11 +732,25 @@ a:active {
     height: $desctop40px;
     background-color: $tolopeaColor;
     border-radius: $desctop20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     @media only screen and (max-width: 499px) {
         width: $mobile42px;
         height: $mobile42px;
         border-radius: $mobile20px;
+    }
+}
+
+.ant-back-top-icon {
+    width: $desctop14px;
+    height: $desctop16px;
+    margin: 0;
+
+    @media only screen and (max-width: 499px) {
+        width: $mobile14px;
+        height: $mobile16px;
     }
 }
 // Back to top
