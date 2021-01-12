@@ -11,6 +11,11 @@
     justify-content: center;
     position: relative;
 
+    @media only screen and (min-width: 500px) and (max-width: 1024px) {
+        height: auto;
+        min-height: 50vw;
+    }
+
     &__title {
         font-family: $Montserrat900;
         font-size: $desctop60px;
