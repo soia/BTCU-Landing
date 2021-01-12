@@ -5,8 +5,17 @@
     background: $zirconColor;
     padding: $desctop60px $desctop135px $desctop60px;
 
+    @media only screen and (max-width: 499px) {
+        padding: $mobile42px $mobile20px;
+        flex-direction: column;
+    }
+
     &__wrapper {
         display: flex;
+
+        @media only screen and (max-width: 499px) {
+            flex-direction: column;
+        }
     }
 
     &__title {
@@ -17,11 +26,22 @@
         font-size: $desctop12px;
         white-space: nowrap;
         min-width: 7vw;
+
+        @media only screen and (max-width: 499px) {
+            letter-spacing: $mobile1px;
+            font-size: $mobile12px;
+            min-width: 100%;
+            margin-bottom: $mobile10px;
+        }
     }
 
     &__rightSide {
         margin: $desctop30px 0 0 $desctop5px;
         width: 100%;
+
+        @media only screen and (max-width: 499px) {
+            margin: $desctop30px 0 0 $desctop5px;
+        }
 
         &_title {
             margin-bottom: $desctop20px;
@@ -29,6 +49,13 @@
             line-height: $desctop50px;
             font-size: $desctop40px;
             color: $tolopeaColor;
+
+            @media only screen and (max-width: 499px) {
+                margin-bottom: $mobile10px;
+                line-height: $mobile42px;
+                font-size: $mobile25px;
+                max-width: 100%;
+            }
 
             span {
                 color: $redColor;
@@ -42,6 +69,12 @@
         justify-content: center;
         margin-bottom: $desctop30px;
 
+        @media only screen and (max-width: 499px) {
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 0;
+        }
+
         &_link {
             position: relative;
             display: flex;
@@ -50,19 +83,36 @@
             width: 20vw;
             height: 10vw;
 
+            @media only screen and (max-width: 499px) {
+                width: 40vw;
+                height: 25vw;
+
+                &:not(:last-child) {
+                    margin-bottom: $mobile30px;
+                }
+            }
+
             &:after {
                 content: "";
                 position: absolute;
                 left: 100%;
-                width: 2px;
+                width: $desctop2px;
                 height: 100%;
                 top: 0;
                 background: linear-gradient(180deg,hsla(0,0%,100%,.47) 0,rgba(112,112,131,.47) 32%,rgba(32,32,62,.47) 0,rgba(112,112,131,.4) 0,hsla(0,0%,100%,.47));
+
+                @media only screen and (max-width: 499px) {
+                    width: $mobile2px;
+                }
             }
 
             img {
                 width: $desctop200px;
                 object-fit: scale-down;
+
+                @media only screen and (max-width: 499px) {
+                    width: 30vw;
+                }
             }
         }
     }

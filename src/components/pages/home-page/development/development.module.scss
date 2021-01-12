@@ -6,6 +6,11 @@
     padding: $desctop60px $desctop135px $desctop60px;
     display: flex;
 
+    @media only screen and (max-width: 499px) {
+        padding: $mobile42px $mobile20px;
+        flex-direction: column;
+    }
+
     &__title {
         font-family: $Montserrat900;
         color: $whiteColor;
@@ -14,11 +19,24 @@
         font-size: $desctop12px;
         white-space: nowrap;
         min-width: 7vw;
+
+
+        @media only screen and (max-width: 499px) {
+            letter-spacing: $mobile1px;
+            font-size: $mobile12px;
+            min-width: 100%;
+            margin-bottom: $mobile10px;
+        }
     }
 
     &__rightSide {
         margin: $desctop50px 0 0 $desctop5px;
         width: 90%;
+
+        @media only screen and (max-width: 499px) {
+            margin: $desctop30px 0 0 $desctop5px;
+            width: 100%;
+        }
 
         &_title {
             margin-bottom: $desctop20px;
@@ -27,6 +45,13 @@
             font-size: $desctop40px;
             color: $whiteColor;
             max-width: 50vw;
+
+            @media only screen and (max-width: 499px) {
+                margin-bottom: $mobile10px;
+                line-height: $mobile42px;
+                font-size: $mobile25px;
+                max-width: 100%;
+            }
 
             span {
                 color: $redColor;
@@ -41,6 +66,13 @@
         border-bottom: $desctop2px solid $whiteColor;
         width: 80%;
 
+        @media only screen and (max-width: 499px) {
+            padding-bottom: $mobile5px;
+            border-bottom: $mobile2px solid $whiteColor;
+            width: 100%;
+            align-items: center;
+        }
+
         &_link {
             padding-bottom: $desctop10px;
             letter-spacing: $desctop1px;
@@ -48,6 +80,16 @@
             font-size: $desctop24px;
             color: $whiteColor;
             font-family: $Montserrat400;
+
+            @media only screen and (max-width: 499px) {
+                padding-bottom: $mobile2px;
+                letter-spacing: $mobile1px;
+                font-size: $mobile16px;
+                white-space: nowrap;
+                max-width: 86%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
 
             &:hover {
                 color: $redColor;
@@ -58,6 +100,11 @@
             cursor: pointer;
             width: $desctop36px;
             height: $desctop36px;
+
+            @media only screen and (max-width: 499px) {
+                width: $mobile34px;
+                height: $mobile34px;
+            }
 
             &:hover {
                 opacity: 0.8;
