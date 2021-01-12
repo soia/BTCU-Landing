@@ -66,7 +66,8 @@
       "receiveSendAndStoreCoins": "Receive, send and store coins. It seamlessly integrates with the app and PLC Farm to store all your minted coins.",
       "autonomous": "Autonomous",
       "walletCanOperate": "The wallet can operate without your involvement while minting new PLCs for you.",
-      "BTCUMarketText": "The BTCU Market is a unique global cryptocurrency marketplace with an innovative concept of selling goods in the internet. That is an online shopping platform allowing users to buy any product with cryptocurrency from around the world. It works with major global online stores, such as Amazon, eBay, Aliexpres, Alibaba, and more large marketplaces are coming soon - stay tuned."
+      "BTCUMarketText": "The BTCU Market is a unique global cryptocurrency marketplace with an innovative concept of selling goods in the internet. That is an online shopping platform allowing users to buy any product with cryptocurrency from around the world. It works with major global online stores, such as Amazon, eBay, Aliexpres, Alibaba, and more large marketplaces are coming soon - stay tuned.",
+      "BTCUExplorerText": "The BTCU Explorer allows you to track and search the BTCU blockchain for transactions, addresses, prices and other activities taking place on Bitcoin Ultimatum (BTCU). Furthermore, user can monitor own transactions, addresses and have detailed analysis of it."
     },
     "forms": {
       "enterYourEmail": "Enter your email"

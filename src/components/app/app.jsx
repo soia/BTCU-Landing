@@ -4,9 +4,14 @@ import ReactNotification from 'react-notifications-component';
 import Header from '../layouts/header';
 import Footer from '../layouts/footer';
 import {
-    HomePage, PageNotFound, LoadingPage, WalletPage, StorePage,
+    HomePage,
+    PageNotFound,
+    LoadingPage,
+    WalletPage,
+    StorePage,
+    ExplorerPage,
 } from '../pages';
-import { walletPath, storePath } from '../../constants';
+import { walletPath, storePath, explorerPath } from '../../constants';
 import '../assets/styles/reset.scss';
 import './app.scss';
 import '../assets/styles/fonts.scss';
@@ -37,6 +42,7 @@ class App extends Component {
                     <Route path="/" component={HomePage} exact />
                     <Route path={walletPath} component={WalletPage} exact />
                     <Route path={storePath} component={StorePage} exact />
+                    <Route path={explorerPath} component={ExplorerPage} exact />
                     <Route component={PageNotFound} />
                 </Switch>
                 <Footer />
