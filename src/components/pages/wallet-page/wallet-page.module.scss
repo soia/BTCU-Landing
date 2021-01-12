@@ -17,6 +17,7 @@
     }
 
     @media only screen and (max-width: 499px) {
+        padding: $desctop40px $mobile44px $desctop40px $mobile20px;
         height: auto;
     }
 
@@ -205,7 +206,7 @@
                 top: 0;
                 height: $desctop63px;
                 width: $desctop1px;
-                background: linear-gradient(1turn,rgba(32,32,62,.0001),#fff);
+                background: linear-gradient(1turn, rgba(32, 32, 62, .0001), #fff);
 
                 @media only screen and (max-width: 499px) {
                     display: none;
@@ -258,8 +259,16 @@
     background: $zirconColor;
     padding: $desctop60px $desctop135px $desctop60px;
 
+    @media only screen and (max-width: 499px) {
+        padding: $mobile42px $mobile20px;
+    }
+
     &__wrapper {
         display: flex;
+
+        @media only screen and (max-width: 499px) {
+            flex-direction: column;
+        }
     }
 
     &__title {
@@ -270,10 +279,21 @@
         font-size: $desctop12px;
         white-space: nowrap;
         min-width: 7vw;
+
+        @media only screen and (max-width: 499px) {
+            letter-spacing: $mobile1px;
+            font-size: $mobile12px;
+            min-width: 100%;
+            margin-bottom: $mobile10px;
+        }
     }
 
     &__rightSide {
         margin: $desctop30px 0 0 $desctop5px;
+
+        @media only screen and (max-width: 499px) {
+            margin: $desctop30px 0 0 $desctop5px;
+        }
 
         &_title {
             margin-bottom: $desctop20px;
@@ -282,6 +302,13 @@
             font-size: $desctop40px;
             color: $tolopeaColor;
             max-width: 50vw;
+
+            @media only screen and (max-width: 499px) {
+                margin-bottom: $mobile10px;
+                line-height: $mobile30px;
+                font-size: $mobile25px;
+                max-width: 100%;
+            }
 
             span {
                 color: $redColor;
@@ -294,12 +321,22 @@
         justify-content: space-between;
         margin-bottom: $desctop30px;
 
+        @media only screen and (max-width: 499px) {
+            margin-bottom: $mobile20px;
+        }
+
         &_text {
             line-height: $desctop32px;
             font-size: $desctop16px;
             font-family: $Montserrat400;
             color: $tolopeaColor;
             max-width: 85%;
+
+            @media only screen and (max-width: 499px) {
+                line-height: $mobile26px;
+                font-size: $mobile14px;
+                max-width: 100%;
+            }
         }
     }
 }
@@ -309,15 +346,30 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
+    @media only screen and (max-width: 499px) {
+        flex-direction: column;
+    }
+
     &__item {
         display: flex;
         width: 45%;
         margin-bottom: $desctop50px;
 
+        @media only screen and (max-width: 499px) {
+            width: 100%;
+            margin-bottom: $mobile50px;
+        }
+
         &_img {
             width: $desctop80px;
             height: $desctop60px;
             margin-right: $desctop40px;
+
+            @media only screen and (max-width: 499px) {
+                width: 22vw;
+                height: 22vw;
+                margin-right: $mobile30px;
+            }
         }
 
         &_title {
@@ -326,6 +378,11 @@
             line-height: 1.2;
             margin-bottom: $desctop10px;
             color: $tolopeaColor;
+
+            @media only screen and (max-width: 499px) {
+                font-size: $mobile18px;
+                margin-bottom: $mobile10px;
+            }
         }
 
         &_text {
@@ -333,6 +390,11 @@
             font-size: $desctop16px;
             line-height: 2;
             color: $tolopeaColor;
+
+            @media only screen and (max-width: 499px) {
+                font-size: $mobile14px;
+                line-height: 1.5;
+            }
         }
     }
 }
@@ -340,8 +402,23 @@
 .mainPic {
     width: 100%;
     text-align: center;
+    display: flex;
+    justify-content: center;
 
-    img {
+    &__img {
         width: 62vw;
+
+        @media only screen and (max-width: 499px) {
+            display: none;
+        }
+    }
+
+    &__imgMobile {
+        width: 90vw;
+        display: none;
+
+        @media only screen and (max-width: 499px) {
+            display: block;
+        }
     }
 }

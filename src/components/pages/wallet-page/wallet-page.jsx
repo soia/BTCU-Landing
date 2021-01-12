@@ -10,6 +10,7 @@ import Telegram from '../../assets/images/icons/telegram';
 import Twitter from '../../assets/images/icons/twitter';
 import background from './images/firstScreenBg.svg';
 import mainPic from './images/mainPic.png';
+import mainPicMobile from './images/mainPicMobile.png';
 import icon1 from './images/1.svg';
 import icon2 from './images/2.svg';
 import icon3 from './images/3.svg';
@@ -229,7 +230,16 @@ class WalletPage extends Component {
                                 })}
                             </div>
                             <div className={style.mainPic}>
-                                <img src={mainPic} alt="mainPic" />
+                                <img
+                                    className={style.mainPic__img}
+                                    src={mainPic}
+                                    alt="mainPic"
+                                />
+                                <img
+                                    className={style.mainPic__imgMobile}
+                                    src={mainPicMobile}
+                                    alt="mainPic"
+                                />
                             </div>
                         </div>
                     </div>
