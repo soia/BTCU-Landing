@@ -16,11 +16,20 @@
         min-height: 50vw;
     }
 
+    @media only screen and (max-width: 499px) {
+        height: auto;
+    }
+
     &__title {
         font-family: $Montserrat900;
         font-size: $desctop60px;
         line-height: $desctop60px;
         color: $whiteColor;
+
+        @media only screen and (max-width: 499px) {
+            font-size: $mobile34px;
+            line-height: $mobile44px;
+        }
 
         span {
             color: $redColor;
@@ -36,6 +45,13 @@
         margin: $desctop40px 0;
         max-width: 28vw;
         margin-bottom: $desctop120px;
+
+        @media only screen and (max-width: 499px) {
+            font-size: $mobile12px;
+            line-height: $mobile21px;
+            max-width: 100%;
+            margin-bottom: $mobile30px;
+        }
     }
 
     &__button {
@@ -67,6 +83,14 @@
         transform: translateY(-50%);
         right: 0;
         height: 50vw;
+
+        @media only screen and (max-width: 499px) {
+            position: static;
+            top: initial;
+            transform: translate(-20vw, 5vw);
+            height: auto;
+            width: 100vw;
+        }
     }
 
     &__form {
@@ -74,6 +98,10 @@
         display: flex;
         position: relative;
         z-index: 1;
+
+        @media only screen and (max-width: 499px) {
+            align-items: center;
+        }
 
         &_input {
             outline: none;
@@ -87,6 +115,15 @@
             color: $whiteColor;
             font-family: $Montserrat400;
             margin-right: $desctop30px;
+
+            @media only screen and (max-width: 499px) {
+                height: $mobile42px;
+                width: 70%;
+                border-bottom: $mobile1px solid $whiteColor;
+                font-size: $mobile14px;
+                margin-right: $mobile20px;
+                border-radius: initial;
+            }
 
             &::placeholder {
                 color: $whiteColor;
@@ -112,6 +149,14 @@
             outline: none;
             border: none;
 
+            @media only screen and (max-width: 499px) {
+                font-size: $mobile12px;
+                letter-spacing: $mobile1px;
+                border-radius: $mobile60px;
+                height: $mobile42px;
+                max-width: 35%;
+            }
+
             &:hover {
                 color: $whiteColor;
                 background: rgba(255, 48, 21, 0.5);
@@ -127,6 +172,12 @@
         position: absolute;
         bottom: 0;
 
+        @media only screen and (max-width: 499px) {
+            flex-wrap: wrap;
+            position: static;
+            margin-bottom: $mobile20px;
+        }
+
         &_title {
             min-width: 33%;
             width: 33%;
@@ -138,6 +189,15 @@
             margin-right: $desctop50px;
             position: relative;
 
+            @media only screen and (max-width: 499px) {
+                min-width: 100%;
+                width: 100%;
+                font-size: $mobile12px;
+                padding-right: 0;
+                margin-right: 0;
+                margin-bottom: $mobile20px;
+            }
+
             &:after {
                 content: "";
                 position: absolute;
@@ -146,6 +206,10 @@
                 height: $desctop63px;
                 width: $desctop1px;
                 background: linear-gradient(1turn,rgba(32,32,62,.0001),#fff);
+
+                @media only screen and (max-width: 499px) {
+                    display: none;
+                }
             }
         }
     }
@@ -159,8 +223,17 @@
     top: 50%;
     transform: translateY(-46%);
 
+    @media only screen and (max-width: 499px) {
+        top: 15%;
+        transform: initial;
+    }
+
     &__link {
         padding: $desctop36px;
+
+        @media only screen and (max-width: 499px) {
+            padding: $mobile15px $mobile30px;
+        }
 
         &:hover {
             svg path {
@@ -172,6 +245,11 @@
     svg {
         width: $desctop13px;
         height: $desctop13px;
+
+        @media only screen and (max-width: 499px) {
+            width: $mobile13px;
+            height: $mobile13px;
+        }
     }
 }
 

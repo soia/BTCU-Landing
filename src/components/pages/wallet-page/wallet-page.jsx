@@ -126,6 +126,11 @@ class WalletPage extends Component {
         return (
             <Fragment>
                 <div className={style.firstScreen}>
+                    <img
+                        className={style.firstScreen__backgroundImg}
+                        src={background}
+                        alt="background"
+                    />
                     <h1
                         className={style.firstScreen__title}
                         dangerouslySetInnerHTML={{ __html: t('headings.BTCUWallet') }}
@@ -156,11 +161,6 @@ class WalletPage extends Component {
                             </button>
                         </form>
                     </div>
-                    <img
-                        className={style.firstScreen__backgroundImg}
-                        src={background}
-                        alt="background"
-                    />
                     <div className={style.socialIcons}>
                         {socialData.map(item => {
                             const { img, link } = item;

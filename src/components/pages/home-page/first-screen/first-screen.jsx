@@ -33,6 +33,11 @@ const FirstScreen = () => {
 
     return (
         <div className={style.firstScreen}>
+            <img
+                className={style.firstScreen__backgroundImg}
+                src={background}
+                alt="background"
+            />
             <h1 className={style.firstScreen__title}>
                 BTC<span className="red">U</span>
                 <br />
@@ -49,11 +54,6 @@ const FirstScreen = () => {
             >
                 White Paper
             </a>
-            <img
-                className={style.firstScreen__backgroundImg}
-                src={background}
-                alt="background"
-            />
             <div className={style.socialIcons}>
                 {socialData.map(item => {
                     const { img, link } = item;
