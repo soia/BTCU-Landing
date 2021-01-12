@@ -5,8 +5,17 @@
     background: $zirconColor;
     padding: $desctop60px $desctop135px $desctop30px;
 
+    @media only screen and (max-width: 499px) {
+        padding: $mobile42px $mobile20px;
+        flex-direction: column;
+    }
+
     &__wrapper {
         display: flex;
+
+        @media only screen and (max-width: 499px) {
+            flex-direction: column;
+        }
     }
 
     &__title {
@@ -17,10 +26,21 @@
         font-size: $desctop12px;
         white-space: nowrap;
         min-width: 7vw;
+
+        @media only screen and (max-width: 499px) {
+            letter-spacing: $mobile1px;
+            font-size: $mobile12px;
+            min-width: 100%;
+            margin-bottom: $mobile10px;
+        }
     }
 
     &__rightSide {
         margin: $desctop30px 0 0 $desctop5px;
+
+        @media only screen and (max-width: 499px) {
+            margin: $desctop30px 0 0 $desctop5px;
+        }
 
         &_title {
             margin-bottom: $desctop20px;
@@ -28,6 +48,13 @@
             line-height: $desctop50px;
             font-size: $desctop40px;
             color: $tolopeaColor;
+
+            @media only screen and (max-width: 499px) {
+                margin-bottom: $mobile10px;
+                line-height: $mobile42px;
+                font-size: $mobile25px;
+                max-width: 100%;
+            }
 
             span {
                 color: $redColor;
@@ -40,9 +67,26 @@
         flex-wrap: wrap;
         margin-bottom: $desctop30px;
 
+        @media only screen and (max-width: 499px) {
+            margin-bottom: 0;
+        }
+
         &_item {
             flex: 0 0 33.333%;
             padding: $desctop15px $desctop30px $desctop40px 0;
+
+            @media only screen and (max-width: 499px) {
+                flex: initial;
+                width: 100%;
+
+                &:not(:last-child) {
+                    padding: 0 0 $mobile42px 0;
+                }
+
+                &:last-child {
+                    padding: 0;
+                }
+            }
 
             &:hover {
                 img {
@@ -53,6 +97,10 @@
             img {
                 filter: grayscale(1);
                 width: 100%;
+
+                @media only screen and (max-width: 499px) {
+                    filter: initial;
+                }
             }
 
             p {
@@ -61,6 +109,12 @@
                 font-size: $desctop24px;
                 color: $tolopeaColor;
                 padding-top: $desctop10px;
+
+                @media only screen and (max-width: 499px) {
+                    line-height: $mobile34px;
+                    font-size: $mobile24px;
+                    padding-top: $mobile10px;
+                }
             }
         }
     }

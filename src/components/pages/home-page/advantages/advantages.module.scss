@@ -5,8 +5,17 @@
     background: $zirconColor;
     padding: $desctop60px $desctop135px $desctop60px;
 
+    @media only screen and (max-width: 499px) {
+        padding: $mobile42px $mobile20px;
+        flex-direction: column;
+    }
+
     &__wrapper {
         display: flex;
+
+        @media only screen and (max-width: 499px) {
+            flex-direction: column;
+        }
     }
 
     &__title {
@@ -17,10 +26,21 @@
         font-size: $desctop12px;
         white-space: nowrap;
         min-width: 7vw;
+
+        @media only screen and (max-width: 499px) {
+            letter-spacing: $mobile1px;
+            font-size: $mobile12px;
+            min-width: 100%;
+            margin-bottom: $mobile10px;
+        }
     }
 
     &__rightSide {
         margin: $desctop30px 0 0 $desctop5px;
+
+        @media only screen and (max-width: 499px) {
+            margin: $desctop30px 0 0 $desctop5px;
+        }
 
         &_title {
             margin-bottom: $desctop20px;
@@ -29,6 +49,13 @@
             font-size: $desctop40px;
             color: $tolopeaColor;
             max-width: 50vw;
+
+            @media only screen and (max-width: 499px) {
+                margin-bottom: $mobile30px;
+                line-height: $mobile42px;
+                font-size: $mobile25px;
+                max-width: 90%;
+            }
 
             span {
                 color: $redColor;
@@ -41,17 +68,46 @@
         flex-direction: column;
         margin-bottom: $desctop30px;
 
+        @media only screen and (max-width: 499px) {
+
+            &:not(:last-child) {
+                margin-bottom: $mobile30px;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
         &_item {
             padding-bottom: $desctop20px;
             border-bottom: $desctop1px solid $tolopeaColor;
             margin-bottom: $desctop20px;
             max-width: 90%;
 
+            @media only screen and (max-width: 499px) {
+                padding-bottom: $mobile20px;
+                border-bottom: $mobile1px solid $tolopeaColor;
+                max-width: 100%;
+
+                &:not(:last-child) {
+                    margin-bottom: $mobile20px;
+                }
+            }
+
             &:hover {
                 border-bottom: $desctop1px solid $redColor;
 
+                @media only screen and (max-width: 499px) {
+                    border-bottom: $mobile1px solid $redColor;
+                }
+
                 .advantages__content_number {
                     text-shadow: 0 0 $desctop1px $redColor;
+
+                    @media only screen and (max-width: 499px) {
+                        text-shadow: 0 0 $mobile1px $redColor;
+                    }
                 }
             }
         }
@@ -60,12 +116,22 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+
+            @media only screen and (max-width: 499px) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
         }
 
         &_title {
             font-size: $desctop24px;
             color: $tolopeaColor;
             font-family: $Montserrat900;
+
+            @media only screen and (max-width: 499px) {
+                font-size: $mobile24px;
+                margin-bottom: $mobile20px;
+            }
         }
 
         &_number {
@@ -73,12 +139,25 @@
             font-family: $Montserrat900;
             font-size: $desctop60px;
             color: $whiteColor;
+
+            @media only screen and (max-width: 499px) {
+                text-shadow: 0 0 $mobile1px $tolopeaColor;
+                font-size: $mobile60px;
+                order: -1;
+                margin-bottom: $mobile10px;
+            }
         }
 
         &_text {
+            font-family: $Montserrat400;
             line-height: $desctop32px;
             font-size: $desctop16px;
             color: $tolopeaColor;
+
+            @media only screen and (max-width: 499px) {
+                line-height: $mobile28px;
+                font-size: $mobile14px;
+            }
         }
     }
 }
