@@ -6,6 +6,11 @@
     padding: $desctop60px $desctop135px $desctop60px;
     display: flex;
 
+    @media only screen and (max-width: 499px) {
+        padding: $mobile42px $mobile20px;
+        flex-direction: column;
+    }
+
     &__title {
         font-family: $Montserrat900;
         color: $whiteColor;
@@ -14,10 +19,21 @@
         font-size: $desctop12px;
         white-space: nowrap;
         min-width: 7vw;
+
+        @media only screen and (max-width: 499px) {
+            letter-spacing: $mobile1px;
+            font-size: $mobile12px;
+            min-width: 100%;
+            margin-bottom: $mobile10px;
+        }
     }
 
     &__rightSide {
         margin: $desctop30px 0 0 $desctop5px;
+
+        @media only screen and (max-width: 499px) {
+            margin: $desctop30px 0 0 $desctop5px;
+        }
 
         &_title {
             margin-bottom: $desctop20px;
@@ -26,6 +42,13 @@
             font-size: $desctop40px;
             color: $whiteColor;
             max-width: 50vw;
+
+            @media only screen and (max-width: 499px) {
+                margin-bottom: $mobile10px;
+                line-height: $mobile42px;
+                font-size: $mobile25px;
+                max-width: 100%;
+            }
 
             span {
                 color: $redColor;
@@ -36,6 +59,10 @@
     &__bottom {
         display: flex;
 
+        @media only screen and (max-width: 499px) {
+            flex-direction: column;
+        }
+
         &_text {
             font-family: $Montserrat400;
             line-height: $desctop34px;
@@ -43,6 +70,13 @@
             color: $whiteColor;
             max-width: 55vw;
             margin-right: $desctop50px;
+
+            @media only screen and (max-width: 499px) {
+                line-height: $mobile34px;
+                font-size: $mobile14px;
+                max-width: 100%;
+                margin-right: 0;
+            }
         }
 
         &_button {
@@ -61,6 +95,15 @@
             cursor: pointer;
             color: $whiteColor;
             text-transform: uppercase;
+
+            @media only screen and (max-width: 499px) {
+                font-size: $mobile12px;
+                letter-spacing: $mobile1px;
+                border-radius: $mobile60px;
+                height: $mobile60px;
+                max-width: 100%;
+                margin-top: $mobile30px;
+            }
 
             &:hover {
                 color: $whiteColor;
