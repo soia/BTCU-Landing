@@ -33,6 +33,8 @@
       "wallet": "钱包",
       "store": "电商平台",
       "explorer": "浏览器",
+      "market": "市场",
+      "BTCUMarket": "<span>BTCU</span> 市场",
       "BTCUWallet": "<span>BTCU</span> 钱包",
       "BTCUStore": "<span>BTCU</span> 电商平台",
       "BTCUExplorer": "<span>BTCU</span> 浏览器"
@@ -63,7 +65,8 @@
       "functional": "功能的",
       "receiveSendAndStoreCoins": "接收，发送和存储硬币。它与应用程序和BTCU无缝集成，以存储你所有的硬币。",
       "autonomous": "自治的",
-      "walletCanOperate": "你不要参与钱包挖矿新的BTCU的过程。"
+      "walletCanOperate": "你不要参与钱包挖矿新的BTCU的过程。",
+      "BTCUMarketText": "BTCU市场是一个独特的全球加密货币市场，具有在互联网上销售商品的创新概念。 这是一个在线购物平台，允许用户从世界各地购买任何具有加密货币的产品。 它与全球主要的在线商店合作，例如亚马逊，易贝，速卖通，阿里巴巴，以及更多大型市场即将面世 - 关注更新。"
     },
     "forms": {
       "enterYourEmail": "请输入您的电子邮件"

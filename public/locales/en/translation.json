@@ -33,6 +33,8 @@
       "wallet": "Wallet",
       "store": "Store",
       "explorer": "Explorer",
+      "market": "Market",
+      "BTCUMarket": "The <span>BTCU</span> Market",
       "BTCUWallet": "The <span>BTCU</span> Wallet",
       "BTCUStore": "The <span>BTCU</span> Store",
       "BTCUExplorer": "The <span>BTCU</span> Explorer"
@@ -63,7 +65,8 @@
       "functional": "Functional",
       "receiveSendAndStoreCoins": "Receive, send and store coins. It seamlessly integrates with the app and PLC Farm to store all your minted coins.",
       "autonomous": "Autonomous",
-      "walletCanOperate": "The wallet can operate without your involvement while minting new PLCs for you."
+      "walletCanOperate": "The wallet can operate without your involvement while minting new PLCs for you.",
+      "BTCUMarketText": "The BTCU Market is a unique global cryptocurrency marketplace with an innovative concept of selling goods in the internet. That is an online shopping platform allowing users to buy any product with cryptocurrency from around the world. It works with major global online stores, such as Amazon, eBay, Aliexpres, Alibaba, and more large marketplaces are coming soon - stay tuned."
     },
     "forms": {
       "enterYourEmail": "Enter your email"
