@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, NavLink, withRouter } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { HashLink } from 'react-router-hash-link';
+import MobileMenu from './mobile-menu';
 import { compose } from '../../../utils';
 import SelectLangeage from '../../language';
 import { walletPath, storePath, explorerPath } from '../../../constants';
@@ -86,6 +87,7 @@ const Header = () => {
             <div className={style.header__rightSide}>
                 <SelectLangeage />
             </div>
+            <MobileMenu links={links} />
         </header>
     );
 };
