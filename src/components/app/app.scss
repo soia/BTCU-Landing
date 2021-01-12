@@ -746,11 +746,12 @@ a:active {
 .ant-back-top-icon {
     width: $desctop14px;
     height: $desctop16px;
-    margin: 0;
+    margin: $desctop3px 0 0 0;
 
     @media only screen and (max-width: 499px) {
         width: $mobile14px;
         height: $mobile16px;
+        margin: $mobile1px 0 0 0;
     }
 }
 // Back to top
