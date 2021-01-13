@@ -9,7 +9,7 @@ const options = {
     username: 'front-dev-2',
     password: 'qzahxynw1BlV1jTUcr2zgoQ6',
     deployPath: '/home/front-dev-2',
-    port: '22045',
+    port: '22142',
     releasesToKeep: 3,
     currentReleaseLink: 'btcu.io',
     onBeforeLink: context => `chmod -R g+rx ${context.release.path}`,
