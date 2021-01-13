@@ -61,7 +61,7 @@ class MobileMenu extends Component {
         }
 
         const drawerHeight = {
-            height: '100vh',
+            height: `${window.innerHeight}px`,
         };
 
         const burgerMenuStyle = isOpen ? 'burgerMenu burgerMenuActive' : 'burgerMenu';
@@ -82,7 +82,10 @@ class MobileMenu extends Component {
                 </div>
                 <div className={drawerStyle} style={drawerHeight}>
                     <SelectLangeage />
-                    <div className={style.linksWrapper}>
+                    <div
+                        className={style.linksWrapper}
+                        style={{ height: `${window.innerHeight}px` }}
+                    >
                         <ul className={style.header__links}>
                             {links.map(item => {
                                 const {
