@@ -1,10 +1,10 @@
-## DAN- Front-end
+## BTCU - Front-end
 
 
 ## Start developing in local environment
 Step 1: Clone this repo
 ```
-git clone https://gitlab.com/profit-dev/dan/
+git clone https://github.com/soia/BTCU-Landing
 ```
 
 Step 2: Install (in project root)
@@ -23,7 +23,7 @@ npm start
 Step 1: Clone this repo
 
 ```
-git clone https://gitlab.com/profit-dev/dan/
+git clone https://github.com/soia/BTCU-Landing
 ```
 
 Step 2: Install (in project root)
