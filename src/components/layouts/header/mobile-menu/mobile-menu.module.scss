@@ -6,7 +6,8 @@
 
     @media only screen and (max-width: 499px) {
         display: block;
-        z-index: 1;
+        position: relative;
+        z-index: 1000;
     }
 }
 
@@ -16,8 +17,8 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-    height: calc(100% - 11vw);
-    overflow-y: scroll;
+    height: 100vh;
+    overflow-y: hidden;
     width: 85%;
 
     &::-webkit-scrollbar {
@@ -82,8 +83,10 @@
         background: $whiteColor;
         width: 100vw;
         position: absolute;
-        top: $mobile70px;
+        top: 0;
+        bottom: 0;
         left: 0;
+        right: 0;
         transition: transform 0.5s;
         z-index: 100;
         transition: visibility 0.25s, opacity 0.1s linear;

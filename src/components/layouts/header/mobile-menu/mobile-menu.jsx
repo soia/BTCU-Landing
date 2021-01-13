@@ -4,56 +4,53 @@ import { withRouter, NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import PropTypes from 'prop-types';
 import Burger from 'react-css-burger';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import SelectLangeage from '../../../language';
 import { compose } from '../../../../utils';
+import { openMenu, closeMenu } from '../../../../actions/drawer.actions';
 import style from './mobile-menu.module.scss';
 
 class MobileMenu extends Component {
     static defaultProps = {
+        closeDrawerMenu: () => {},
+        openDrawerMenu: () => {},
+        isOpen: false,
         links: [],
         location: {},
     };
 
     static propTypes = {
+        closeDrawerMenu: PropTypes.func,
+        openDrawerMenu: PropTypes.func,
+        isOpen: PropTypes.bool,
         links: PropTypes.instanceOf(Array),
         location: PropTypes.object,
     };
 
-    state = {
-        isOpen: false,
-    };
-
     componentDidUpdate(prevProps) {
-        const { location } = this.props;
+        const { closeDrawerMenu, location } = this.props;
         if (location !== prevProps.location) {
-            this.setState({
-                isOpen: false,
-            });
+            closeDrawerMenu();
         }
     }
 
     componentWillUnmount() {
-        this.setState({
-            isOpen: false,
-        });
+        const { closeDrawerMenu } = this.props;
+        closeDrawerMenu();
     }
 
     toggleBurger = () => {
-        const { isOpen } = this.state;
+        const { isOpen, closeDrawerMenu, openDrawerMenu } = this.props;
         if (isOpen) {
-            return this.setState({
-                isOpen: false,
-            });
+            return closeDrawerMenu();
         }
 
-        this.setState({
-            isOpen: true,
-        });
+        openDrawerMenu();
     };
 
     render() {
-        const { links } = this.props;
-        const { isOpen } = this.state;
+        const { links, isOpen } = this.props;
 
         const drawerStyle = isOpen ? style.drawer__opened : style.drawer__closed;
 
@@ -64,13 +61,15 @@ class MobileMenu extends Component {
         }
 
         const drawerHeight = {
-            height: `calc(${window.innerHeight}px - 19vw)`,
+            height: '100vh',
         };
+
+        const burgerMenuStyle = isOpen ? 'burgerMenu burgerMenuActive' : 'burgerMenu';
 
         return (
             <Fragment>
                 <div className={style.burgerMenu}>
-                    <div className="burgerMenu">
+                    <div className={burgerMenuStyle}>
                         <Burger
                             onClick={this.toggleBurger}
                             active={isOpen}
@@ -113,4 +112,26 @@ class MobileMenu extends Component {
     }
 }
 
-export default compose(withTranslation(), withRouter)(MobileMenu);
+const mapStateToProps = state => {
+    const {
+        drawer: { isOpen },
+    } = state;
+
+    return {
+        isOpen,
+    };
+};
+
+const mapDispatchToProps = dispatch => bindActionCreators(
+    {
+        openDrawerMenu: () => openMenu(),
+        closeDrawerMenu: () => closeMenu(),
+    },
+    dispatch,
+);
+
+export default compose(
+    withTranslation(),
+    connect(mapStateToProps, mapDispatchToProps),
+    withRouter,
+)(MobileMenu);

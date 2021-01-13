@@ -2,14 +2,17 @@ import React from 'react';
 import { Link, NavLink, withRouter } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { HashLink } from 'react-router-hash-link';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import MobileMenu from './mobile-menu';
 import { compose } from '../../../utils';
 import SelectLangeage from '../../language';
 import { walletPath, storePath, explorerPath } from '../../../constants';
 import logo from '../../assets/images/logos/btcu.svg';
+import logoDark from '../../assets/images/logos/btcu-dark.svg';
 import style from './header.module.scss';
 
-const Header = () => {
+const Header = ({ isOpen }) => {
     const { t } = useTranslation();
 
     const links = [
@@ -56,7 +59,7 @@ const Header = () => {
             <div className={style.header__leftSide}>
                 <div className={style.header__logo}>
                     <Link to="/">
-                        <img className={style.header__logo_img} src={logo} alt="logo" />
+                        <img className={style.header__logo_img} src={isOpen ? logoDark : logo} alt="logo" />
                     </Link>
                 </div>
                 <div className={style.header__linksWrapper}>
@@ -92,4 +95,25 @@ const Header = () => {
     );
 };
 
-export default compose(withRouter)(Header);
+Header.defaultProps = {
+    isOpen: false,
+};
+
+Header.propTypes = {
+    isOpen: PropTypes.bool,
+};
+
+const mapStateToProps = state => {
+    const {
+        drawer: { isOpen },
+    } = state;
+
+    return {
+        isOpen,
+    };
+};
+
+export default compose(
+    connect(mapStateToProps),
+    withRouter,
+)(Header);

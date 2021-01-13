@@ -670,6 +670,14 @@ span.ant-radio+* {
     }
 }
 
+.burgerMenuActive button span span {
+    background-color: $tolopeaColor;
+
+    &:before, &:after {
+        background-color: $tolopeaColor;
+    }
+}
+
 // burger-button
 
 // pretty-print
