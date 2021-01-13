@@ -5,6 +5,8 @@ import ivanIvanov from '../../../assets/images/team/Ivan_Ivanov.jpg';
 import sergeyBelets from '../../../assets/images/team/Sergey_Belets.jpg';
 import ericAlexandre from '../../../assets/images/team/Eric_Alexandre.jpg';
 import luizaAve from '../../../assets/images/team/Luiza_Ave.jpg';
+import nikolayShkilev from '../../../assets/images/team/Nikolay_Shkilev.jpg';
+import andreiKurkin from '../../../assets/images/team/Andrei_Kurkin.jpg';
 import style from './ambassadors.module.scss';
 
 const Ambassadors = () => {
@@ -30,6 +32,14 @@ const Ambassadors = () => {
         {
             name: 'Luiza Ave',
             img: luizaAve,
+        },
+        {
+            name: 'Nikolay Shkilev',
+            img: nikolayShkilev,
+        },
+        {
+            name: 'Andrei Kurkin',
+            img: andreiKurkin,
         },
     ];
 
