@@ -136,6 +136,7 @@
                 position: static;
                 padding: 0;
             }
+
         }
 
         &_description,
@@ -177,6 +178,10 @@
         &_facebook {
             display: flex;
             align-items: inherit;
+
+            &:hover {
+                opacity: 0.8;
+            }
 
             img {
                 width: 100%;
