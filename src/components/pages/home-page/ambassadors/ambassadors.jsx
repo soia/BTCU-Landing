@@ -93,18 +93,20 @@ const Ambassadors = () => {
 
                             const isActive = activeSeeMore === name;
 
-                            let descroptionStyle = style.ambassadors__content_descriptionActive;
-
-                            if (description.length > 170 && !isActive) {
-                                descroptionStyle = style.ambassadors__content_description;
-                            }
-
                             const photoStyle = isActive
                                 ? style.ambassadors__content_photoActive
                                 : style.ambassadors__content_photo;
 
+                            const descriptionWrStyle = isActive
+                                ? style.ambassadors__content_descriptionWr
+                                : '';
 
+                            let descroptionStyle = style.ambassadors__content_descriptionActive;
                             let descriptionText = description;
+
+                            if (description.length > 170 && !isActive) {
+                                descroptionStyle = style.ambassadors__content_description;
+                            }
 
                             if (description.length > 170) {
                                 descriptionText = `${description.slice(0, 170)}...`;
@@ -113,7 +115,6 @@ const Ambassadors = () => {
                             if (isActive) {
                                 descriptionText = description;
                             }
-
 
                             const socials = (
                                 <div className={style.ambassadors__socials}>
@@ -173,8 +174,12 @@ const Ambassadors = () => {
                                         {name}
                                     </p>
                                     {socials}
-                                    <p className={descroptionStyle}>{descriptionText}</p>
-                                    {seemore}
+                                    <div style={{ position: 'relative' }}>
+                                        <div className={descriptionWrStyle}>
+                                            <p className={descroptionStyle}>{descriptionText}</p>
+                                            {seemore}
+                                        </div>
+                                    </div>
                                 </div>
                             );
                         })}

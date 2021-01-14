@@ -122,6 +122,21 @@
             }
         }
 
+        &_descriptionWr {
+            position: absolute;
+            z-index: 10;
+            background: $zirconColor;
+            padding: 0 $desctop10px $desctop10px $desctop10px;
+            border-bottom-right-radius: $desctop32px;
+            border-bottom-left-radius: $desctop32px;
+            left: -0.7vw;
+
+            @media only screen and (max-width: 499px) {
+                position: static;
+                padding: 0;
+            }
+        }
+
         &_description,
         &_descriptionActive {
             font-family: $Montserrat400;
@@ -161,6 +176,10 @@
         &_facebook {
             display: flex;
             align-items: inherit;
+
+            img {
+                width: 100%;
+            }
         }
 
         &_linkedIn {
