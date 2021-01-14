@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import classNames from 'classnames';
+import OutsideClickHandler from 'react-outside-click-handler';
 import konstantinVaksin from '../../../assets/images/team/Konstantin_Vaksin.jpg';
 import ivanIvanov from '../../../assets/images/team/Ivan_Ivanov.jpg';
 import sergeyBelets from '../../../assets/images/team/Sergey_Belets.jpg';
@@ -20,6 +21,10 @@ const Ambassadors = () => {
 
     const openDescription = value => {
         setSeeMore(value);
+    };
+
+    const closeBlur = () => {
+        setSeeMore('');
     };
 
     const text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.';
@@ -176,19 +181,21 @@ const Ambassadors = () => {
 
                             return (
                                 <div key={name} className={itemstyle}>
-                                    <img src={img} alt="logo" className={photoStyle} />
-                                    <p className={style.ambassadors__content_name}>
-                                        {name}
-                                    </p>
-                                    {socials}
-                                    <div className={style.ambassadors__content_container}>
-                                        <div className={descriptionWrStyle}>
-                                            <p className={descroptionStyle}>
-                                                {descriptionText}
-                                            </p>
-                                            {seemore}
+                                    <OutsideClickHandler onOutsideClick={closeBlur}>
+                                        <img src={img} alt="logo" className={photoStyle} />
+                                        <p className={style.ambassadors__content_name}>
+                                            {name}
+                                        </p>
+                                        {socials}
+                                        <div className={style.ambassadors__content_container}>
+                                            <div className={descriptionWrStyle}>
+                                                <p className={descroptionStyle}>
+                                                    {descriptionText}
+                                                </p>
+                                                {seemore}
+                                            </div>
                                         </div>
-                                    </div>
+                                    </OutsideClickHandler>
                                 </div>
                             );
                         })}
