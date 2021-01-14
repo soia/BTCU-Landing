@@ -122,6 +122,15 @@
             }
         }
 
+        &_container {
+            position: relative;
+            min-height: 13.5vw;
+
+            @media only screen and (max-width: 499px) {
+                min-height: initial;
+            }
+        }
+
         &_descriptionWr {
             position: absolute;
             z-index: 10;
@@ -136,7 +145,6 @@
                 position: static;
                 padding: 0;
             }
-
         }
 
         &_description,

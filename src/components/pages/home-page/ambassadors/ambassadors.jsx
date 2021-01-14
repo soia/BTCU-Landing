@@ -174,7 +174,7 @@ const Ambassadors = () => {
                                         {name}
                                     </p>
                                     {socials}
-                                    <div style={{ position: 'relative' }}>
+                                    <div className={style.ambassadors__content_container}>
                                         <div className={descriptionWrStyle}>
                                             <p className={descroptionStyle}>{descriptionText}</p>
                                             {seemore}
