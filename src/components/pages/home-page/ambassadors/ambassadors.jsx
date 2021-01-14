@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import classNames from 'classnames';
 import konstantinVaksin from '../../../assets/images/team/Konstantin_Vaksin.jpg';
 import ivanIvanov from '../../../assets/images/team/Ivan_Ivanov.jpg';
 import sergeyBelets from '../../../assets/images/team/Sergey_Belets.jpg';
@@ -101,6 +102,15 @@ const Ambassadors = () => {
                                 ? style.ambassadors__content_descriptionWr
                                 : '';
 
+                            let itemstyle = style.ambassadors__content_item;
+
+                            if (activeSeeMore && !isActive && window.innerWidth > 499) {
+                                itemstyle = classNames(
+                                    style.ambassadors__content_item,
+                                    style.ambassadors__content_itemBlur,
+                                );
+                            }
+
                             let descroptionStyle = style.ambassadors__content_descriptionActive;
                             let descriptionText = description;
 
@@ -165,10 +175,7 @@ const Ambassadors = () => {
                             );
 
                             return (
-                                <div
-                                    key={name}
-                                    className={style.ambassadors__content_item}
-                                >
+                                <div key={name} className={itemstyle}>
                                     <img src={img} alt="logo" className={photoStyle} />
                                     <p className={style.ambassadors__content_name}>
                                         {name}
@@ -176,7 +183,9 @@ const Ambassadors = () => {
                                     {socials}
                                     <div className={style.ambassadors__content_container}>
                                         <div className={descriptionWrStyle}>
-                                            <p className={descroptionStyle}>{descriptionText}</p>
+                                            <p className={descroptionStyle}>
+                                                {descriptionText}
+                                            </p>
                                             {seemore}
                                         </div>
                                     </div>

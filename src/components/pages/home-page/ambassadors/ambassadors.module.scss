@@ -95,6 +95,10 @@
             }
         }
 
+        &_itemBlur {
+            filter: blur(3px);
+        }
+
         &_photo {
             filter: grayscale(1);
 
