@@ -166,19 +166,20 @@ const Ambassadors = () => {
                             );
 
                             const seemore = (
-                                <div
-                                    className={style.seeMore}
-                                    onClick={() => openDescription(isActive ? '' : name)}
-                                >
-                                    <p>
-                                        {isActive
-                                            ? t('buttons.hide')
-                                            : t('buttons.seeMore')}
-                                    </p>
+                                <div style={{ cursor: 'pointer' }}>
                                     {isActive ? (
-                                        <img src={hideIcon} alt="hide" />
+                                        <div className={style.seeMoreHide}>
+                                            <p>{t('buttons.hide')}</p>
+                                            <img src={hideIcon} alt="hide" />
+                                        </div>
                                     ) : (
-                                        <img src={moreIcon} alt="More" />
+                                        <div
+                                            className={style.seeMore}
+                                            onClick={() => openDescription(name)}
+                                        >
+                                            <p>{t('buttons.seeMore')}</p>
+                                            <img src={moreIcon} alt="More" />
+                                        </div>
                                     )}
                                 </div>
                             );
@@ -207,7 +208,9 @@ const Ambassadors = () => {
                                                         __html: descriptionText,
                                                     }}
                                                 />
-                                                {description.length > 170 ? seemore : null}
+                                                {description.length > 170
+                                                    ? seemore
+                                                    : null}
                                             </div>
                                         </div>
                                     </OutsideClickHandler>

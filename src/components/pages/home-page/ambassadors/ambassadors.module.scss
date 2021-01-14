@@ -96,7 +96,7 @@
         }
 
         &_itemBlur {
-            filter: blur(3px);
+            filter: blur($desctop4px);
         }
 
         &_photo {
@@ -235,7 +235,8 @@
     }
 }
 
-.seeMore {
+.seeMore,
+.seeMoreHide {
     display: flex;
     align-items: center;
     margin: $desctop10px 0;
@@ -275,4 +276,9 @@
             height: $mobile24px;
         }
     }
+}
+
+.seeMoreHide {
+    user-select: none;
+    pointer-events: none;
 }
