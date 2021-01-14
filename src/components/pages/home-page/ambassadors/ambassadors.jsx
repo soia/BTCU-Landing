@@ -1,3 +1,4 @@
+/* eslint-disable react/no-danger */
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import classNames from 'classnames';
@@ -27,57 +28,60 @@ const Ambassadors = () => {
         setSeeMore('');
     };
 
-    const text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.';
-
     const data = [
         {
             name: 'Konstantin Vaksin',
             img: konstantinVaksin,
-            linkedIn: '/',
-            facebook: '/',
-            description: text,
+            linkedIn:
+                'https://www.linkedin.com/in/konstantin-vaksin-57ba2b3/?originalSubdomain=be',
+            facebook: '',
+            description: 'Senior Consulting Engineer Cisco Systems',
         },
         {
             name: 'Ivan Ivanov',
             img: ivanIvanov,
-            linkedIn: '/',
-            facebook: '/',
-            description: text,
+            linkedIn: 'https://hk.linkedin.com/in/ivanvalerevich',
+            facebook: '',
+            description:
+                'An entrepreneur, investor, mentor. Partner ABRT VC, Founder Uvecon.VC Hong Kong.Former Managing director Yukuma Group (Hong Kong, China, UK), co-founder of the European real estate marketplace EE24.com (Estonia). ',
         },
         {
             name: 'Sergey Belets',
             img: sergeyBelets,
-            linkedIn: '/',
-            facebook: '/',
-            description: text,
+            linkedIn: 'https://ru.linkedin.com/in/sergey-belets-181b4a46',
+            facebook: '',
+            description: 'High-level top manager, Hedera Hashgraph ex-ambassador ',
         },
         {
             name: 'Eric Alexandre',
             img: ericAlexandre,
-            linkedIn: '/',
-            facebook: '/',
-            description: text,
+            linkedIn: 'https://sg.linkedin.com/in/eric-alexandre-2184315',
+            facebook: '',
+            description: 'text',
         },
         {
             name: 'Luiza Ave',
             img: luizaAve,
-            linkedIn: '/',
-            facebook: '/',
-            description: text,
+            linkedIn: '',
+            facebook: '',
+            description:
+                'Fashion influencer and general manager of Arab Fashion Council (Russia and CIS countries). Won the VI International Congress of Real Estate and Investment, 2020: For development and investments in the fashion industry, international networking and consulting. ',
         },
         {
             name: 'Nikolay Shkilev',
             img: nikolayShkilev,
-            linkedIn: '/',
-            facebook: '/',
-            description: text,
+            linkedIn: 'https://ru.linkedin.com/in/vipmentor',
+            facebook: '',
+            description:
+                'Crypto Enthusiast, Advisor, Mentor, PhD, Businessman (Co-Founder and CEO of Zelwin.com, Founder of Private Business Club ) <br>Self-Made Russia award <br> Best advisor award <br> Super TOP award (Business FM)',
         },
         {
             name: 'Andrei Kurkin',
             img: andreiKurkin,
-            linkedIn: '/',
-            facebook: '/',
-            description: text,
+            linkedIn: 'https://www.linkedin.com/in/andrei-kurkin-19856273',
+            facebook: '',
+            description:
+                '18 years in Ecomorce, 5 years in Blockchain. Digital Week Online Co-founder, Invest show, Eurasian Center of Innovation and Digital Economy',
         },
     ];
 
@@ -182,17 +186,28 @@ const Ambassadors = () => {
                             return (
                                 <div key={name} className={itemstyle}>
                                     <OutsideClickHandler onOutsideClick={closeBlur}>
-                                        <img src={img} alt="logo" className={photoStyle} />
+                                        <img
+                                            src={img}
+                                            alt="logo"
+                                            className={photoStyle}
+                                        />
                                         <p className={style.ambassadors__content_name}>
                                             {name}
                                         </p>
                                         {socials}
-                                        <div className={style.ambassadors__content_container}>
+                                        <div
+                                            className={
+                                                style.ambassadors__content_container
+                                            }
+                                        >
                                             <div className={descriptionWrStyle}>
-                                                <p className={descroptionStyle}>
-                                                    {descriptionText}
-                                                </p>
-                                                {seemore}
+                                                <p
+                                                    className={descroptionStyle}
+                                                    dangerouslySetInnerHTML={{
+                                                        __html: descriptionText,
+                                                    }}
+                                                />
+                                                {description.length > 170 ? seemore : null}
                                             </div>
                                         </div>
                                     </OutsideClickHandler>

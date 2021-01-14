@@ -166,6 +166,15 @@
         }
 
         &_description {
+            height: $desctop160px;
+            height: 11vw;
+            overflow: hidden;
+
+            @media only screen and (max-width: 499px) {
+                height: initial;
+                overflow: initial;
+            }
+
             &:after {
                 content: "";
                 position: absolute;
@@ -181,9 +190,11 @@
     &__socials {
         display: flex;
         margin: $desctop13px 0 $desctop14px 0;
+        height: $desctop19px;
 
         @media only screen and (max-width: 499px) {
             margin: $mobile13px 0 $mobile14px 0;
+            height: initial;
         }
 
         &_linkedIn,
