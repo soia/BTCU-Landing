@@ -130,6 +130,7 @@
             border-bottom-right-radius: $desctop32px;
             border-bottom-left-radius: $desctop32px;
             left: -0.7vw;
+            width: calc(100% + 1.4vw);
 
             @media only screen and (max-width: 499px) {
                 position: static;
