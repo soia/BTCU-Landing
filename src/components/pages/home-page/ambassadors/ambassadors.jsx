@@ -30,12 +30,26 @@ const Ambassadors = () => {
 
     const data = [
         {
+            name: 'Nikolay Shkilev',
+            img: nikolayShkilev,
+            linkedIn: 'https://ru.linkedin.com/in/vipmentor',
+            facebook: '',
+            description: t('ambassadors.nikolayShkilev'),
+        },
+        {
             name: 'Konstantin Vaksin',
             img: konstantinVaksin,
             linkedIn:
                 'https://www.linkedin.com/in/konstantin-vaksin-57ba2b3/?originalSubdomain=be',
             facebook: '',
             description: t('ambassadors.konstantinVaksin'),
+        },
+        {
+            name: 'Eric Alexandre',
+            img: ericAlexandre,
+            linkedIn: 'https://sg.linkedin.com/in/eric-alexandre-2184315',
+            facebook: '',
+            description: t('ambassadors.ericAlexandre'),
         },
         {
             name: 'Ivan Ivanov',
@@ -52,25 +66,11 @@ const Ambassadors = () => {
             description: t('ambassadors.sergeyBelets'),
         },
         {
-            name: 'Eric Alexandre',
-            img: ericAlexandre,
-            linkedIn: 'https://sg.linkedin.com/in/eric-alexandre-2184315',
-            facebook: '',
-            description: t('ambassadors.ericAlexandre'),
-        },
-        {
             name: 'Luiza Ave',
             img: luizaAve,
             linkedIn: '',
             facebook: '',
             description: t('ambassadors.luizaAve'),
-        },
-        {
-            name: 'Nikolay Shkilev',
-            img: nikolayShkilev,
-            linkedIn: 'https://ru.linkedin.com/in/vipmentor',
-            facebook: '',
-            description: t('ambassadors.nikolayShkilev'),
         },
         {
             name: 'Andrei Kurkin',
