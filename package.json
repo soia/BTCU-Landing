@@ -38,8 +38,8 @@
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
-        "release:deploy": "react-scripts build && node ./release-deploy",
-        "release:deploy-prod": "react-scripts build && node ./release-deploy-prod",
+        "release:dev": "react-scripts build && node ./release-deploy",
+        "release:prod": "react-scripts build && node ./release-deploy-prod",
         "eject": "react-scripts eject",
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build"
