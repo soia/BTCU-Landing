@@ -35,53 +35,49 @@ const Ambassadors = () => {
             linkedIn:
                 'https://www.linkedin.com/in/konstantin-vaksin-57ba2b3/?originalSubdomain=be',
             facebook: '',
-            description: 'Senior Consulting Engineer Cisco Systems',
+            description: t('ambassadors.konstantinVaksin'),
         },
         {
             name: 'Ivan Ivanov',
             img: ivanIvanov,
             linkedIn: 'https://hk.linkedin.com/in/ivanvalerevich',
             facebook: '',
-            description:
-                'An entrepreneur, investor, mentor. Partner ABRT VC, Founder Uvecon.VC Hong Kong.Former Managing director Yukuma Group (Hong Kong, China, UK), co-founder of the European real estate marketplace EE24.com (Estonia). ',
+            description: t('ambassadors.ivanIvanov'),
         },
         {
             name: 'Sergey Belets',
             img: sergeyBelets,
             linkedIn: 'https://ru.linkedin.com/in/sergey-belets-181b4a46',
             facebook: '',
-            description: 'High-level top manager, Hedera Hashgraph ex-ambassador ',
+            description: t('ambassadors.sergeyBelets'),
         },
         {
             name: 'Eric Alexandre',
             img: ericAlexandre,
             linkedIn: 'https://sg.linkedin.com/in/eric-alexandre-2184315',
             facebook: '',
-            description: 'text',
+            description: t('ambassadors.ericAlexandre'),
         },
         {
             name: 'Luiza Ave',
             img: luizaAve,
             linkedIn: '',
             facebook: '',
-            description:
-                'Fashion influencer and general manager of Arab Fashion Council (Russia and CIS countries). Won the VI International Congress of Real Estate and Investment, 2020: For development and investments in the fashion industry, international networking and consulting. ',
+            description: t('ambassadors.luizaAve'),
         },
         {
             name: 'Nikolay Shkilev',
             img: nikolayShkilev,
             linkedIn: 'https://ru.linkedin.com/in/vipmentor',
             facebook: '',
-            description:
-                'Crypto Enthusiast, Advisor, Mentor, PhD, Businessman (Co-Founder and CEO of Zelwin.com, Founder of Private Business Club ) <br>Self-Made Russia award <br> Best advisor award <br> Super TOP award (Business FM)',
+            description: t('ambassadors.nikolayShkilev'),
         },
         {
             name: 'Andrei Kurkin',
             img: andreiKurkin,
             linkedIn: 'https://www.linkedin.com/in/andrei-kurkin-19856273',
             facebook: '',
-            description:
-                '18 years in Ecomorce, 5 years in Blockchain. Digital Week Online Co-founder, Invest show, Eurasian Center of Innovation and Digital Economy',
+            description: t('ambassadors.andreiKurkin'),
         },
     ];
 
