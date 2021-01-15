@@ -37,12 +37,11 @@ const Ambassadors = () => {
             description: t('ambassadors.nikolayShkilev'),
         },
         {
-            name: 'Konstantin Vaksin',
-            img: konstantinVaksin,
-            linkedIn:
-                'https://www.linkedin.com/in/konstantin-vaksin-57ba2b3/?originalSubdomain=be',
+            name: 'Ivan Ivanov',
+            img: ivanIvanov,
+            linkedIn: 'https://hk.linkedin.com/in/ivanvalerevich',
             facebook: '',
-            description: t('ambassadors.konstantinVaksin'),
+            description: t('ambassadors.ivanIvanov'),
         },
         {
             name: 'Eric Alexandre',
@@ -52,11 +51,12 @@ const Ambassadors = () => {
             description: t('ambassadors.ericAlexandre'),
         },
         {
-            name: 'Ivan Ivanov',
-            img: ivanIvanov,
-            linkedIn: 'https://hk.linkedin.com/in/ivanvalerevich',
+            name: 'Konstantin Vaksin',
+            img: konstantinVaksin,
+            linkedIn:
+                'https://www.linkedin.com/in/konstantin-vaksin-57ba2b3/?originalSubdomain=be',
             facebook: '',
-            description: t('ambassadors.ivanIvanov'),
+            description: t('ambassadors.konstantinVaksin'),
         },
         {
             name: 'Sergey Belets',
