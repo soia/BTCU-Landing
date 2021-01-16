@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import classNames from 'classnames';
+import mykolaUdianskyi from '../../../assets/images/team/Mykola_Udianskyi.jpg';
 import ericMa from '../../../assets/images/team/eric_Ma.jpg';
 import bogdanPrilepa from '../../../assets/images/team/bogdan_prilepa.jpg';
 import andriiSaranenko from '../../../assets/images/team/andrii_saranenko.jpg';
@@ -29,6 +30,14 @@ const Team = () => {
 
     const data = [
         {
+            name: 'Nikolai Udianskiy',
+            img: mykolaUdianskyi,
+            linkedIn: '',
+            facebook: '',
+            description: t('team.mykolaUdianskyi'),
+            position: 'Co-founder',
+        },
+        {
             name: 'Eric Ma',
             img: ericMa,
             linkedIn: 'https://www.linkedin.com/in/ericmacmc',
@@ -39,7 +48,7 @@ const Team = () => {
         {
             name: 'Bohdan Prilepa',
             img: bogdanPrilepa,
-            linkedIn: '',
+            linkedIn: 'https://www.linkedin.com/in/prilepab/',
             facebook: '',
             description: t('team.bogdanPrilepa'),
             position: 'Chief Operating Officer',
@@ -71,7 +80,7 @@ const Team = () => {
         {
             name: 'Vadim Yarmak',
             img: vadimYarmak,
-            linkedIn: '',
+            linkedIn: 'https://www.linkedin.com/in/vadim-yarmak-5a0492117/',
             facebook: '',
             description: t('team.andriiSaranenko'),
             position: 'Chief Marketing Officer',
