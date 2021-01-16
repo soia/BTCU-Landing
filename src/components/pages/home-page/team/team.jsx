@@ -33,7 +33,7 @@ const Team = () => {
             name: 'Nikolai Udianskiy',
             img: mykolaUdianskyi,
             linkedIn: '',
-            facebook: '',
+            facebook: 'https://www.facebook.com/nikolay.aleksandrovich.311',
             description: t('team.mykolaUdianskyi'),
             position: 'Co-founder',
         },
