@@ -3,11 +3,12 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import classNames from 'classnames';
-import mykolaUdianskyi from '../../../assets/images/team/Mykola_Udianskyi.jpg';
+import ericMa from '../../../assets/images/team/eric_Ma.jpg';
 import bogdanPrilepa from '../../../assets/images/team/bogdan_prilepa.jpg';
 import andriiSaranenko from '../../../assets/images/team/andrii_saranenko.jpg';
 import julietSu from '../../../assets/images/team/juliet_Su.jpg';
 import dinisGuarda from '../../../assets/images/team/dinis_Guarda.jpg';
+import vadimYarmak from '../../../assets/images/team/vadim_Yarmak.jpg';
 import linkedInIcon from '../../../assets/images/icons/linkedIn-icon.svg';
 import facebookIcon from '../../../assets/images/icons/facebook-icon.svg';
 import moreIcon from '../../../assets/images/icons/more-icon.svg';
@@ -27,14 +28,14 @@ const Team = () => {
     };
 
     const data = [
-        // {
-        //     name: 'Nikolai Udianskiy',
-        //     img: mykolaUdianskyi,
-        //     linkedIn: '',
-        //     facebook: '',
-        //     description: t('team.mykolaUdianskyi'),
-        //     position: 'Chief Executive Officer',
-        // },
+        {
+            name: 'Eric Ma',
+            img: ericMa,
+            linkedIn: 'https://www.linkedin.com/in/ericmacmc',
+            facebook: '',
+            description: t('ambassadors.ericMa'),
+            position: 'Chief Executive Officer',
+        },
         {
             name: 'Bohdan Prilepa',
             img: bogdanPrilepa,
@@ -69,7 +70,7 @@ const Team = () => {
         },
         {
             name: 'Vadim Yarmak',
-            img: andriiSaranenko,
+            img: vadimYarmak,
             linkedIn: '',
             facebook: '',
             description: t('team.andriiSaranenko'),

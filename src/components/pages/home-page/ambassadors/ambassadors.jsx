@@ -10,7 +10,6 @@ import ericAlexandre from '../../../assets/images/team/Eric_Alexandre.jpg';
 import luizaAve from '../../../assets/images/team/Luiza_Ave.jpg';
 import nikolayShkilev from '../../../assets/images/team/Nikolay_Shkilev.jpg';
 import andreiKurkin from '../../../assets/images/team/Andrei_Kurkin.jpg';
-import ericMa from '../../../assets/images/team/eric_Ma.jpg';
 import linkedInIcon from '../../../assets/images/icons/linkedIn-icon.svg';
 import facebookIcon from '../../../assets/images/icons/facebook-icon.svg';
 import moreIcon from '../../../assets/images/icons/more-icon.svg';
@@ -50,13 +49,6 @@ const Ambassadors = () => {
             linkedIn: 'https://sg.linkedin.com/in/eric-alexandre-2184315',
             facebook: '',
             description: t('ambassadors.ericAlexandre'),
-        },
-        {
-            name: 'Eric Ma',
-            img: ericMa,
-            linkedIn: 'https://www.linkedin.com/in/ericmacmc',
-            facebook: '',
-            description: t('ambassadors.ericMa'),
         },
         {
             name: 'Sergey Belets',
