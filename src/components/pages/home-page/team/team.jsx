@@ -30,7 +30,7 @@ const Team = () => {
         {
             name: 'Nikolai Udianskiy',
             img: mykolaUdianskyi,
-            linkedIn: 'https://ru.linkedin.com/in/vipmentor',
+            linkedIn: '',
             facebook: '',
             description: t('team.mykolaUdianskyi'),
             position: 'Chief Executive Officer',
@@ -38,7 +38,7 @@ const Team = () => {
         {
             name: 'Bohdan Prilepa',
             img: bogdanPrilepa,
-            linkedIn: 'https://hk.linkedin.com/in/ivanvalerevich',
+            linkedIn: '',
             facebook: '',
             description: t('team.bogdanPrilepa'),
             position: 'Chief Operating Officer',
@@ -62,7 +62,7 @@ const Team = () => {
         {
             name: 'Andriy Saranenko',
             img: andriiSaranenko,
-            linkedIn: 'https://www.linkedin.com/in/ericmacmc',
+            linkedIn: '',
             facebook: '',
             description: t('team.andriiSaranenko'),
             position: 'Chief Technology Officer',
