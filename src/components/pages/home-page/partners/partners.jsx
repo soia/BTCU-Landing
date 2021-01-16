@@ -9,6 +9,7 @@ import citiesabc from '../../../assets/images/logos/citiesabc.svg';
 import fashionabc from '../../../assets/images/logos/fashionabc.svg';
 import investorMedia from '../../../assets/images/logos/investorMedia.svg';
 import hedgethink from '../../../assets/images/logos/hedgethink.svg';
+import tradersdna from '../../../assets/images/logos/tradersdna.svg';
 import style from './partners.module.scss';
 
 const Partners = () => {
@@ -28,28 +29,32 @@ const Partners = () => {
             img: pmIcon,
         },
         {
-            link: 'www.openbusinesscouncil.org',
+            link: 'https://www.openbusinesscouncil.org',
             img: openBusiness,
         },
         {
-            link: 'www.intelligenthq.com',
+            link: 'https://www.intelligenthq.com',
             img: intelligent,
         },
         {
-            link: 'www.citiesabc.com',
+            link: 'https://www.citiesabc.com',
             img: citiesabc,
         },
         {
-            link: 'www.fashionabc.org ',
+            link: 'https://www.fashionabc.org ',
             img: fashionabc,
         },
         {
-            link: 'www.tradersdna.com',
-            img: investorMedia,
+            link: 'https://www.tradersdna.com',
+            img: tradersdna,
         },
         {
-            link: 'www.hedgethink.com',
+            link: 'https://www.hedgethink.com',
             img: hedgethink,
+        },
+        {
+            link: 'https://www.investor-media.com/',
+            img: investorMedia,
         },
     ];
 
