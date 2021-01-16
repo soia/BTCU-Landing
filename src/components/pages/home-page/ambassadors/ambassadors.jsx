@@ -195,7 +195,13 @@ const Ambassadors = () => {
                                     tabIndex="0"
                                     onBlur={collapse}
                                 >
-                                    <img src={img} alt="logo" className={photoStyle} />
+                                    <div>
+                                        <img
+                                            src={img}
+                                            alt="logo"
+                                            className={photoStyle}
+                                        />
+                                    </div>
                                     <p className={style.ambassadors__content_name}>
                                         {name}
                                     </p>

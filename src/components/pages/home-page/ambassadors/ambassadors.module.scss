@@ -136,6 +136,30 @@
             }
         }
 
+        &_position {
+            background: $zirconColor;
+            width: 20.9vw;
+            height: 2.5vw;
+            font-family: $Montserrat900;
+            font-size: $desctop12px;
+            line-height: $desctop12px;
+            text-align: center;
+            letter-spacing: $desctop1px;
+            text-transform: uppercase;
+            color: $redColor;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media only screen and (max-width: 499px) {
+                width: 100%;
+                margin: 3vw 0 2vw;
+                font-size: $mobile12px;
+                line-height: $mobile12px;
+                letter-spacing: $mobile1px;
+            }
+        }
+
         &_container {
             position: relative;
             min-height: 13.5vw;

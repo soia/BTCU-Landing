@@ -28,39 +28,52 @@ const Team = () => {
 
     const data = [
         {
-            name: 'Mykola Udianskyi',
+            name: 'Nikolai Udianskiy',
             img: mykolaUdianskyi,
             linkedIn: 'https://ru.linkedin.com/in/vipmentor',
             facebook: '',
-            description: t('ambassadors.nikolayShkilev'),
+            description: t('team.mykolaUdianskyi'),
+            position: 'Chief Executive Officer',
         },
         {
-            name: 'Bogdan Prilepa',
+            name: 'Bohdan Prilepa',
             img: bogdanPrilepa,
             linkedIn: 'https://hk.linkedin.com/in/ivanvalerevich',
             facebook: '',
-            description: t('ambassadors.ivanIvanov'),
+            description: t('team.bogdanPrilepa'),
+            position: 'Chief Operating Officer',
         },
         {
             name: 'Dinis Guarda',
             img: dinisGuarda,
             linkedIn: 'https://www.linkedin.com/in/dinisguarda/',
             facebook: '',
-            description: t('ambassadors.dinisGuarda'),
+            description: t('team.dinisGuarda'),
+            position: 'Strategic Development Officer',
         },
         {
             name: 'Juliet  Su',
             img: julietSu,
             linkedIn: 'https://www.linkedin.com/in/juliet-su-苏丽-438b3725',
             facebook: '',
-            description: t('ambassadors.julietSu'),
+            description: t('team.julietSu'),
+            position: 'Business Development Officer',
         },
         {
-            name: 'Andrii Saranenko',
+            name: 'Andriy Saranenko',
             img: andriiSaranenko,
             linkedIn: 'https://www.linkedin.com/in/ericmacmc',
             facebook: '',
-            description: t('ambassadors.ericMa'),
+            description: t('team.andriiSaranenko'),
+            position: 'Chief Technology Officer',
+        },
+        {
+            name: 'Vadim Yarmak',
+            img: andriiSaranenko,
+            linkedIn: '',
+            facebook: '',
+            description: t('team.andriiSaranenko'),
+            position: 'Chief Marketing Officer',
         },
     ];
 
@@ -75,7 +88,12 @@ const Team = () => {
                     <div className={style.ambassadors__content}>
                         {data.map(item => {
                             const {
-                                name, img, linkedIn, facebook, description,
+                                name,
+                                img,
+                                linkedIn,
+                                facebook,
+                                description,
+                                position,
                             } = item;
 
                             const isActive = activeSeeMore === name;
@@ -168,7 +186,12 @@ const Team = () => {
                                     tabIndex="0"
                                     onBlur={collapse}
                                 >
-                                    <img src={img} alt="logo" className={photoStyle} />
+                                    <div>
+                                        <img src={img} alt="logo" className={photoStyle} />
+                                        <p className={style.ambassadors__content_position}>
+                                            {position}
+                                        </p>
+                                    </div>
                                     <p className={style.ambassadors__content_name}>
                                         {name}
                                     </p>
