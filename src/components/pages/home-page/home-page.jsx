@@ -21,8 +21,8 @@ const HomePage = () => (
         <Airdrop />
         <Ambassadors />
         <Team />
-        <Media />
         <Partners />
+        <Media />
         <Development />
         <Subscribe />
     </Fragment>

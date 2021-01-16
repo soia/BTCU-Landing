@@ -137,7 +137,7 @@
         }
 
         &_position {
-            background: $zirconColor;
+            background: $whiteColor;
             width: 20.9vw;
             height: 2.5vw;
             font-family: $Montserrat900;
@@ -172,7 +172,6 @@
         &_descriptionWr {
             position: absolute;
             z-index: 10;
-            background: $zirconColor;
             padding: 0 $desctop10px $desctop10px $desctop10px;
             border-bottom-right-radius: $desctop32px;
             border-bottom-left-radius: $desctop32px;
@@ -185,7 +184,16 @@
             }
         }
 
+        &_descriptionWr {
+            background: $zirconColor;
+        }
+
+        &_descriptionWrWhite {
+            background: $whiteColor;
+        }
+
         &_description,
+        &_descriptionWhite,
         &_descriptionActive {
             font-family: $Montserrat400;
             font-size: $desctop16px;
@@ -208,7 +216,8 @@
             }
         }
 
-        &_description {
+        &_description,
+        &_descriptionWhite {
             height: $desctop160px;
             height: 11vw;
             overflow: hidden;
@@ -225,7 +234,30 @@
                 left: 0;
                 height: 7vw;
                 width: 100%;
+            }
+        }
+
+        &_description {
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 7vw;
+                width: 100%;
                 background: linear-gradient(180deg, hsla(0, 0%, 100%, 0), #f7f8f8 99%);
+            }
+        }
+
+        &_descriptionWhite {
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 7vw;
+                width: 100%;
+                background: linear-gradient(180deg, hsla(0, 0%, 100%, 0), #fff 99%);
             }
         }
     }
