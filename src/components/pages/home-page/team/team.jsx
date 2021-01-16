@@ -62,7 +62,7 @@ const Team = () => {
         {
             name: 'Andriy Saranenko',
             img: andriiSaranenko,
-            linkedIn: '',
+            linkedIn: 'https://www.linkedin.com/in/andriy-s-a1ba9912a/',
             facebook: '',
             description: t('team.andriiSaranenko'),
             position: 'Chief Technology Officer',
