@@ -1,8 +1,8 @@
+/* eslint-disable jsx-a11y/no-noninteractive-tabindex */
 /* eslint-disable react/no-danger */
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import classNames from 'classnames';
-import OutsideClickHandler from 'react-outside-click-handler';
 import mykolaUdianskyi from '../../../assets/images/team/Mykola_Udianskyi.jpg';
 import bogdanPrilepa from '../../../assets/images/team/bogdan_prilepa.jpg';
 import andriiSaranenko from '../../../assets/images/team/andrii_saranenko.jpg';
@@ -18,11 +18,11 @@ const Team = () => {
     const { t } = useTranslation();
     const [activeSeeMore, setSeeMore] = useState('');
 
-    const openDescription = value => {
-        setSeeMore(value);
+    const expand = name => {
+        setSeeMore(name);
     };
 
-    const closeBlur = () => {
+    const collapse = () => {
         setSeeMore('');
     };
 
@@ -67,9 +67,7 @@ const Team = () => {
     return (
         <div className={style.ambassadors} id="team">
             <div className={style.ambassadors__wrapper}>
-                <h2 className={style.ambassadors__title}>
-                    {t('headings.team')}
-                </h2>
+                <h2 className={style.ambassadors__title}>{t('headings.team')}</h2>
                 <div className={style.ambassadors__rightSide}>
                     <p className={style.ambassadors__rightSide_title}>
                         BTCU <span>{t('headings.team')}</span>
@@ -147,14 +145,14 @@ const Team = () => {
                             const seemore = (
                                 <div style={{ cursor: 'pointer' }}>
                                     {isActive ? (
-                                        <div className={style.seeMoreHide}>
+                                        <div className={style.seeMore} onClick={collapse}>
                                             <p>{t('buttons.hide')}</p>
                                             <img src={hideIcon} alt="hide" />
                                         </div>
                                     ) : (
                                         <div
                                             className={style.seeMore}
-                                            onClick={() => openDescription(name)}
+                                            onClick={() => expand(name)}
                                         >
                                             <p>{t('buttons.seeMore')}</p>
                                             <img src={moreIcon} alt="More" />
@@ -164,35 +162,28 @@ const Team = () => {
                             );
 
                             return (
-                                <div key={name} className={itemstyle}>
-                                    <OutsideClickHandler onOutsideClick={closeBlur}>
-                                        <img
-                                            src={img}
-                                            alt="logo"
-                                            className={photoStyle}
-                                        />
-                                        <p className={style.ambassadors__content_name}>
-                                            {name}
-                                        </p>
-                                        {socials}
-                                        <div
-                                            className={
-                                                style.ambassadors__content_container
-                                            }
-                                        >
-                                            <div className={descriptionWrStyle}>
-                                                <p
-                                                    className={descroptionStyle}
-                                                    dangerouslySetInnerHTML={{
-                                                        __html: descriptionText,
-                                                    }}
-                                                />
-                                                {description.length > 170
-                                                    ? seemore
-                                                    : null}
-                                            </div>
+                                <div
+                                    key={name}
+                                    className={itemstyle}
+                                    tabIndex="0"
+                                    onBlur={collapse}
+                                >
+                                    <img src={img} alt="logo" className={photoStyle} />
+                                    <p className={style.ambassadors__content_name}>
+                                        {name}
+                                    </p>
+                                    {socials}
+                                    <div className={style.ambassadors__content_container}>
+                                        <div className={descriptionWrStyle}>
+                                            <p
+                                                className={descroptionStyle}
+                                                dangerouslySetInnerHTML={{
+                                                    __html: descriptionText,
+                                                }}
+                                            />
+                                            {description.length > 170 ? seemore : null}
                                         </div>
-                                    </OutsideClickHandler>
+                                    </div>
                                 </div>
                             );
                         })}

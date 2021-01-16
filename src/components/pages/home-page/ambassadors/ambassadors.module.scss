@@ -74,6 +74,7 @@
         &_item {
             flex: 0 0 33.333%;
             padding: $desctop15px $desctop30px $desctop40px 0;
+            outline: none;
 
             @media only screen and (max-width: 499px) {
                 flex: initial;
@@ -253,8 +254,7 @@
     }
 }
 
-.seeMore,
-.seeMoreHide {
+.seeMore {
     display: flex;
     align-items: center;
     margin: $desctop10px 0;
@@ -294,9 +294,4 @@
             height: $mobile24px;
         }
     }
-}
-
-.seeMoreHide {
-    user-select: none;
-    pointer-events: none;
 }
