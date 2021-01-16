@@ -27,14 +27,14 @@ const Team = () => {
     };
 
     const data = [
-        {
-            name: 'Nikolai Udianskiy',
-            img: mykolaUdianskyi,
-            linkedIn: '',
-            facebook: '',
-            description: t('team.mykolaUdianskyi'),
-            position: 'Chief Executive Officer',
-        },
+        // {
+        //     name: 'Nikolai Udianskiy',
+        //     img: mykolaUdianskyi,
+        //     linkedIn: '',
+        //     facebook: '',
+        //     description: t('team.mykolaUdianskyi'),
+        //     position: 'Chief Executive Officer',
+        // },
         {
             name: 'Bohdan Prilepa',
             img: bogdanPrilepa,

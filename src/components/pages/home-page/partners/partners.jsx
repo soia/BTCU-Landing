@@ -3,6 +3,12 @@ import { useTranslation } from 'react-i18next';
 import coinsbitIcon from '../../../assets/images/logos/coinsbit.svg';
 import profItIcon from '../../../assets/images/logos/prof-it.svg';
 import pmIcon from '../../../assets/images/logos/pm.svg';
+import openBusiness from '../../../assets/images/logos/openBusiness.svg';
+import intelligent from '../../../assets/images/logos/intelligent.svg';
+import citiesabc from '../../../assets/images/logos/citiesabc.svg';
+import fashionabc from '../../../assets/images/logos/fashionabc.svg';
+import investorMedia from '../../../assets/images/logos/investorMedia.svg';
+import hedgethink from '../../../assets/images/logos/hedgethink.svg';
 import style from './partners.module.scss';
 
 const Partners = () => {
@@ -20,6 +26,30 @@ const Partners = () => {
         {
             link: 'https://prmr.com/',
             img: pmIcon,
+        },
+        {
+            link: 'www.openbusinesscouncil.org',
+            img: openBusiness,
+        },
+        {
+            link: 'www.intelligenthq.com',
+            img: intelligent,
+        },
+        {
+            link: 'www.citiesabc.com',
+            img: citiesabc,
+        },
+        {
+            link: 'www.fashionabc.org ',
+            img: fashionabc,
+        },
+        {
+            link: 'www.tradersdna.com',
+            img: investorMedia,
+        },
+        {
+            link: 'www.hedgethink.com',
+            img: hedgethink,
         },
     ];
 

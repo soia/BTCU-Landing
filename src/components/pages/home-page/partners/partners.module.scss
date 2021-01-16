@@ -3,7 +3,7 @@
 
 .partners {
     background: $zirconColor;
-    padding: $desctop60px $desctop135px $desctop60px;
+    padding: $desctop60px $desctop135px 0 $desctop135px;
 
     @media only screen and (max-width: 499px) {
         padding: $mobile42px $mobile20px;
@@ -67,6 +67,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         margin-bottom: $desctop30px;
 
         @media only screen and (max-width: 499px) {
@@ -82,13 +83,14 @@
             justify-content: center;
             width: 20vw;
             height: 10vw;
+            margin-bottom: $desctop40px;
 
             @media only screen and (max-width: 499px) {
                 width: 40vw;
                 height: 25vw;
 
                 &:not(:last-child) {
-                    margin-bottom: $mobile30px;
+                    margin-bottom: $mobile42px;
                 }
             }
 
