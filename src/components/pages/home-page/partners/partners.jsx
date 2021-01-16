@@ -10,6 +10,7 @@ import fashionabc from '../../../assets/images/logos/fashionabc.svg';
 import investorMedia from '../../../assets/images/logos/investorMedia.svg';
 import hedgethink from '../../../assets/images/logos/hedgethink.svg';
 import tradersdna from '../../../assets/images/logos/tradersdna.svg';
+import unic from '../../../assets/images/logos/unic.png';
 import style from './partners.module.scss';
 
 const Partners = () => {
@@ -23,6 +24,10 @@ const Partners = () => {
         {
             link: 'https://prof-it.bz/',
             img: profItIcon,
+        },
+        {
+            link: 'https://www.unic.ac.cy/iff/dlrc/',
+            img: unic,
         },
         {
             link: 'https://prmr.com/',
