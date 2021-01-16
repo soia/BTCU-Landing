@@ -109,7 +109,16 @@
 
         &_photo,
         &_photoActive {
-            width: 100%;
+            width: 20.9vw;
+            height: 20.9vw;
+            border-radius: $desctop20px;
+            object-fit: cover;
+
+            @media only screen and (max-width: 499px) {
+                width: 100%;
+                height: 100%;
+                border-radius: $mobile20px;
+            }
         }
 
         &_name {
@@ -162,6 +171,15 @@
             @media only screen and (max-width: 499px) {
                 font-size: $mobile16px;
                 line-height: $mobile32px;
+            }
+
+            a {
+                color: $redColor;
+
+                &:hover {
+                    color: $redColor;
+                    text-decoration: underline;
+                }
             }
         }
 
