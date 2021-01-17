@@ -82,7 +82,7 @@ const Team = () => {
             img: vadimYarmak,
             linkedIn: 'https://www.linkedin.com/in/vadim-yarmak-5a0492117/',
             facebook: '',
-            description: t('team.andriiSaranenko'),
+            description: t('team.vadimYarmak'),
             position: 'Chief Marketing Officer',
         },
     ];
