@@ -13,7 +13,7 @@ import tradersdna from '../../../assets/images/logos/tradersdna.svg';
 import unic from '../../../assets/images/logos/unic.png';
 import atomicWallet from '../../../assets/images/logos/atomic-wallet.svg';
 import chainSecure from '../../../assets/images/logos/chain-secure.svg';
-import zUnionIcon from '../../../assets/images/logos/z-union.svg';
+import zUnionIcon from '../../../assets/images/logos/z-union.png';
 import style from './partners.module.scss';
 
 const Partners = () => {
