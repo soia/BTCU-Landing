@@ -30,20 +30,20 @@ const Team = () => {
 
     const data = [
         {
-            name: 'Nikolai Udianskiy',
-            img: mykolaUdianskyi,
-            linkedIn: '',
-            facebook: 'https://www.facebook.com/nikolay.aleksandrovich.311',
-            description: t('team.mykolaUdianskyi'),
-            position: 'Co-founder',
-        },
-        {
             name: 'Eric Ma',
             img: ericMa,
             linkedIn: 'https://www.linkedin.com/in/ericmacmc',
             facebook: '',
             description: t('ambassadors.ericMa'),
             position: 'Chief Executive Officer',
+        },
+        {
+            name: 'Nikolai Udianskiy',
+            img: mykolaUdianskyi,
+            linkedIn: '',
+            facebook: 'https://www.facebook.com/nikolay.aleksandrovich.311',
+            description: t('team.mykolaUdianskyi'),
+            position: 'Co-founder',
         },
         {
             name: 'Bohdan Prilepa',

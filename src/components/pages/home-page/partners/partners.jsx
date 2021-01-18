@@ -11,6 +11,8 @@ import investorMedia from '../../../assets/images/logos/investorMedia.svg';
 import hedgethink from '../../../assets/images/logos/hedgethink.svg';
 import tradersdna from '../../../assets/images/logos/tradersdna.svg';
 import unic from '../../../assets/images/logos/unic.png';
+import atomicWallet from '../../../assets/images/logos/atomic-wallet.svg';
+import chainSecure from '../../../assets/images/logos/chain-secure.svg';
 import style from './partners.module.scss';
 
 const Partners = () => {
@@ -60,6 +62,14 @@ const Partners = () => {
         {
             link: 'https://www.investor-media.com/',
             img: investorMedia,
+        },
+        {
+            link: 'https://atomicwallet.io',
+            img: atomicWallet,
+        },
+        {
+            link: 'https://chain-secure.com/',
+            img: chainSecure,
         },
     ];
 
