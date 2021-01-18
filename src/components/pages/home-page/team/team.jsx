@@ -88,7 +88,7 @@ const Team = () => {
     ];
 
     return (
-        <div className={style.ambassadors} id="team" style={{ background: '#fff' }}>
+        <div className={style.ambassadors} id="team">
             <div className={style.ambassadors__wrapper}>
                 <h2 className={style.ambassadors__title}>{t('headings.team')}</h2>
                 <div className={style.ambassadors__rightSide}>
@@ -113,7 +113,7 @@ const Team = () => {
                                 : style.ambassadors__content_photo;
 
                             const descriptionWrStyle = isActive
-                                ? style.ambassadors__content_descriptionWrWhite
+                                ? style.ambassadors__content_descriptionWr
                                 : '';
 
                             let itemstyle = style.ambassadors__content_item;
@@ -129,7 +129,7 @@ const Team = () => {
                             let descriptionText = description;
 
                             if (description.length > 170 && !isActive) {
-                                descroptionStyle = style.ambassadors__content_descriptionWhite;
+                                descroptionStyle = style.ambassadors__content_description;
                             }
 
                             if (description.length > 170) {

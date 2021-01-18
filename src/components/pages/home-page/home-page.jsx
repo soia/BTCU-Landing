@@ -19,8 +19,8 @@ const HomePage = () => (
         <AboutUs />
         <Advantages />
         <Airdrop />
-        <Ambassadors />
         <Team />
+        <Ambassadors />
         <Partners />
         <Media />
         <Development />
