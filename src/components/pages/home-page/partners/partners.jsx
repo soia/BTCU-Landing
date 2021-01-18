@@ -13,6 +13,7 @@ import tradersdna from '../../../assets/images/logos/tradersdna.svg';
 import unic from '../../../assets/images/logos/unic.png';
 import atomicWallet from '../../../assets/images/logos/atomic-wallet.svg';
 import chainSecure from '../../../assets/images/logos/chain-secure.svg';
+import zUnionIcon from '../../../assets/images/logos/z-union.svg';
 import style from './partners.module.scss';
 
 const Partners = () => {
@@ -30,6 +31,10 @@ const Partners = () => {
         {
             link: 'https://www.unic.ac.cy/iff/dlrc/',
             img: unic,
+        },
+        {
+            link: 'https://z-union.ru/en/',
+            img: zUnionIcon,
         },
         {
             link: 'https://prmr.com/',
