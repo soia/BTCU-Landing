@@ -1,13 +1,11 @@
-#!/usr/bin/env node
-
-// eslint-disable-next-line
+/* eslint-disable */
 const Deployer = require('ssh-deploy-release');
 
 const options = {
     localPath: 'build',
     host: 'devnew.btcu.io',
     username: 'front-dev-2',
-    password: 'qzahxynw1BlV1jTUcr2zgoQ6',
+    password: require('./keys').DEV_PASSWORD,
     deployPath: '/home/front-dev-2',
     port: '22142',
     releasesToKeep: 3,
